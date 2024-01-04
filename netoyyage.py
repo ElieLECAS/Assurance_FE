@@ -1,6 +1,6 @@
 import pandas as pd
 
-dataset_path = "C:\Users\33679\OneDrive\Bureau\Nouveau dossier (3)\Projet assurance\Assurance_FE\Dataset_Brief.csv"
+dataset_path = "Dataset_Brief.csv"
 df = pd.read_csv(dataset_path)
 
 # Informations générales sur les données
