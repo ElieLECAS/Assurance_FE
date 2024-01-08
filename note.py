@@ -194,3 +194,8 @@ Enregistrez les données nettoyées dans un nouveau fichier si nécessaire.
 python
 
 df.to_csv('donnees_nettoyees.csv', index=False)
+
+
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=True, train_size=0.85, random_state=42, stratify=X['smoker'])

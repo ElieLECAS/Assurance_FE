@@ -1,0 +1,88 @@
+Semaine 1:
+Jour 1-2:
+
+    Compréhension du brief: Assurez-vous de bien comprendre les exigences et clarifiez tout point ambigu avec votre associé.
+    Mise en place de l'environnement: Créez un environnement virtuel pour votre projet et installez les bibliothèques nécessaires (pandas, numpy, seaborn, scikit-learn, streamlit, etc.).
+
+Jour 3-4:
+
+    Nettoyage des données (Notebook 1):
+        Utilisez missingno pour identifier et traiter les valeurs manquantes.
+        Recherchez les doublons et éliminez-les si nécessaire.
+        Explorez les valeurs aberrantes et décidez si vous devez les corriger ou les supprimer.
+
+Jour 5-6:
+
+    Analyse exploratoire des données (Notebook 2):
+        Réalisez une analyse univariée de chaque variable.
+        Étudiez la corrélation des variables avec la variable cible (charges).
+        Effectuez des analyses bivariées (utilisez des graphiques comme box plots, violin plots).
+        Documentez vos observations et résultats.
+
+Jour 7:
+
+    Diagramme de Gantt: Planifiez les prochaines étapes du projet en utilisant un diagramme de Gantt.
+
+Semaine 2:
+Jour 8:
+
+    Modélisation (Notebook 3):
+        Commencez par créer un dummy modèle pour avoir un point de comparaison.
+        Séparez les données en ensembles d'entraînement (80%) et de test (20%).
+        Appliquez une transformation logarithmique si nécessaire.
+        Utilisez les algorithmes de régression linéaire, Lasso, Ridge, et ElasticNet de scikit-learn.
+        Comparez les modèles à l'aide du R2 et du RMSE.
+
+Jour 9:
+
+    Pipelines et pré-traitement:
+        Utilisez des pipelines pour gérer le pré-traitement des données.
+        Explorez l'utilisation de PolynomialFeatures.
+        Effectuez une sélection des hyperparamètres avec GridSearchCV et RandomSearchCV.
+
+Jour 10-11:
+
+    Streamlit Application:
+        Créez une application Streamlit pour présenter votre modèle.
+        Utilisez le modèle exporté (.pkl) dans l'application.
+
+Jour 12:
+
+    Préparation des slides de présentation:
+        Créez une présentation claire et concise.
+        Utilisez des visualisations pertinentes.
+        Préparez votre discours en considérant le public non technique.
+
+Jour 13:
+
+    Révision générale:
+        Revoyez tous les documents.
+        Préparez-vous pour la présentation orale.
+
+Jour 14:
+
+    Présentation orale (9h):
+        Respectez le temps alloué à chaque section.
+        Soyez prêt à répondre aux questions.
+        Identifiez les difficultés rencontrées et proposez des pistes d'amélioration.
+
+Livrables:
+
+    GitHub:
+        Notebook Nettoyage
+        Notebook Analyse
+        Notebook Modélisation
+    Slides de présentation.
+    Diagramme de Gantt.
+
+Conseils supplémentaires:
+
+    Communication avec l'associé:
+        Assurez-vous de travailler en étroite collaboration avec votre associé tout au long du projet.
+        Partagez régulièrement les progrès et les résultats.
+
+    Utilisez des outils collaboratifs:
+        Utilisez des outils comme Trello pour la gestion quotidienne du projet et GitHub pour la collaboration.
+
+    Réflexion critique:
+        Identifiez les limitations de votre modèle et discutez-en dans votre présentation.
