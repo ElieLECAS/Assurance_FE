@@ -51,3 +51,67 @@ print(df.head())
 #
 
 df['age'] = df['age'].astype(int)
+
+
+
+
+ 
+
+ 
+
+# # Diviser le DataFrame en features (X) et la target variable (y)
+
+# X = df.drop('charges', axis=1)
+
+# y = df['charges']
+
+# X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=True, train_size=0.85, random_state=42, stratify=X['smoker'])
+
+# # Créer un modèle Lasso
+# lasso_model = Lasso(alpha=1.0)  # Vous pouvez ajuster le paramètre alpha pour la force de régularisation
+
+# lasso_model.fit(X_train, y_train)
+
+# # Faire des prédictions sur l'ensemble de test
+# y_pred_lasso = lasso_model.predict(X_test)
+
+# # Évaluer la performance du modèle Lasso
+# mse_lasso = mean_squared_error(y_test, y_pred_lasso)
+# r2_lasso = r2_score(y_test, y_pred_lasso)
+
+# print(f'Mean Squared Error (Lasso): {mse_lasso:.2f}')
+# print(f'R-squared (Lasso): {r2_lasso:.2f}')
+
+ 
+
+# # Diviser les données en ensembles d'entraînement et de test (80% entraînement, 20% test)
+
+
+
+ 
+
+# # Créer un modèle Ridge
+
+# ridge_model = Ridge(alpha=1.0)  # Vous pouvez ajuster le paramètre alpha pour la force de régularisation
+
+# ridge_model.fit(X_train, y_train)
+
+ 
+
+# # Faire des prédictions sur l'ensemble de test
+
+# y_pred = ridge_model.predict(X_test)
+
+ 
+
+# # Évaluer la performance du modèle
+
+# mse = mean_squared_error(y_test, y_pred)
+
+# r2 = r2_score(y_test, y_pred)
+
+ 
+
+# print(f'Mean Squared Error: {mse:.2f}')
+
+# print(f'R-squared: {r2:.2f}')
