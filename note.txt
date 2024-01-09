@@ -1,3 +1,22 @@
+# Convertir une colonne en type datetime
+df['date_col'] = pd.to_datetime(df['date_col'])
+
+# Convertir une colonne en type catégorie
+df['cat_col'] = df['cat_col'].astype('category')
+
+8. Enregistrement des données nettoyées :
+
+Enregistrez les données nettoyées dans un nouveau fichier si nécessaire.
+
+python
+
+df.to_csv('donnees_nettoyees.csv', index=False)
+
+
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=True, train_size=0.85, random_state=42, stratify=X['smoker'])
+
 import pandas as pd
 
 dataset_path = "Dataset_Brief.csv"
