@@ -50,14 +50,27 @@ def page_prediction():
     # Ajoutez ici d'autres champs de saisie des données (sex, bmi, etc.)
     sex = st.radio("Sexe", ["Homme", "Femme"])
 
-    poids = st.number_input("Entrez votre Poids (kg)", min_value=0, max_value=150, value=70)
+    smoker = st.radio("Êtes-vous Fumeur", ["non_Fumeur", "Fumeur"])
+
+    poids = st.number_input("Entrez votre Poids (kg)", min_value=0.00, max_value=150.00, value=70.00)
     st.write(f"Votre poids est {poids} kg")
 
-    taille = st.number_input("Entrez votre Taille (cm)", min_value=0, max_value=220, value=170)
+    taille = st.number_input("Entrez votre Taille (cm)", min_value=0.00, max_value=220.00, value=170.00)
     st.write(f"Votre taille est {taille/100} m")
 
     bmi = round(poids / (taille /100)**2,2)
     st.write(f"Votre imc est de {bmi}")
+
+
+    children = st.number_input("Entrez le nombre(s) d'enfant(s)", min_value=0, value=0)
+    st.write(f"Vous avez {children} enfant(s)")
+
+
+    # Ajoutez un champ de sélection avec 4 options
+    region = st.selectbox("Sélectionnez une region", ["northwest", "northeast", "southwest", "southeast"])
+    
+    # Affichez la valeur sélectionnée
+    st.write(f"Option sélectionnée : {region}")
     
 
     # Ajoutez un bouton pour déclencher la prédiction
