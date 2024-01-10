@@ -6,7 +6,7 @@ from sklearn.preprocessing import PolynomialFeatures
 
 
 
-st.title("Projet Assur'Aiment")
+st.title("Projet Assur'Aimant")
 
 
 st.sidebar.header("Paramètres")
@@ -88,4 +88,4 @@ if st.sidebar.button("Prédire les Charges Médicales"):
         prediction = grid_search.predict(input_data)
 
 
-    st.write(f"Prédiction des Charges Médicales : {prediction}")
+    st.write(f"Prédiction des Charges Médicales : {str(prediction)}")
