@@ -1,4 +1,7 @@
-import streamlit as st
+import streamlit as st 
+import pickle
+import numpy as np
+from sklearn.preprocessing import PolynomialFeatures
 from datetime import datetime, timedelta
 
 def page_accueil():
@@ -45,7 +48,16 @@ def page_prediction():
 
     # Ajoutez ici d'autres champs de saisie des données (sex, bmi, etc.)
     sex = st.radio("Sexe", ["Homme", "Femme"])
-    bmi = st.slider("Indice de Masse Corporelle (BMI)", min_value=10.0, max_value=50.0, value=25.0)
+
+    poids = st.number_input("Entrez votre Poids (kg)", min_value=0, max_value=150, value=70)
+    st.write(f"Votre poids est {poids} kg")
+
+    taille = st.number_input("Entrez votre Taille (cm)", min_value=0, max_value=220, value=170)
+    st.write(f"Votre taille est {taille/100} m")
+
+    bmi = round(poids / (taille /100)**2,2)
+    st.write(f"Votre imc est de {bmi}")
+    
 
     # Ajoutez un bouton pour déclencher la prédiction
     if st.button("Prédire le Prix de l'Assurance"):
@@ -54,3 +66,45 @@ def page_prediction():
 
 if __name__ == "__main__":
     page_prediction()
+
+
+
+
+
+
+
+
+
+
+
+# parametre_enfants = st.sidebar.slider("Nombre d'enfants", 0, 5, 0)
+# parametre_region = st.sidebar.selectbox("Région", ['NordOuest', 'NordEast', 'SudOuest', 'SudEast'])
+# parametre_fumeur = st.sidebar.checkbox("Fumeur", False)
+
+
+
+
+# if parametre_enfants == 1:
+#     st.write(f"Vous avez {parametre_enfants} enfant")
+# elif parametre_enfants == 0:
+#     st.write(f"Vous n'avez pas d'enfants")
+# else:
+#     st.write(f"Vous avez {parametre_enfants} enfants")
+
+# st.write(f"Vous habitez au {parametre_region}")
+# st.write(f"Vous êtes {'fumeur' if parametre_fumeur else 'non fumeur'}")
+
+
+# if parametre_sexe=='Homme':
+#     parametre_sexe == 0
+# else:
+#     parametre_sexe==1
+
+# if st.sidebar.button("Prédire les Charges Médicales"):
+#     with open('modele.pkl', 'rb') as file:
+#         model = pickle.load(file)
+
+#         input_data = np.array([[parametre_sexe,parametre_age, bmi, parametre_fumeur,parametre_enfants,parametre_region]])
+
+#         prediction = model.predict(input_data)
+#     st.write(f"Prédiction des Charges Médicales : {prediction[0]}")
