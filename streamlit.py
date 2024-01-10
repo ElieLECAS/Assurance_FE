@@ -1,6 +1,9 @@
 import streamlit as st 
 import pickle
 import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from datetime import datetime, timedelta
 
@@ -49,7 +52,8 @@ def page_prediction():
     # Ajoutez ici d'autres champs de saisie des données (sex, bmi, etc.)
     sex = st.radio("Sexe", ["Homme", "Femme"])
 
-    smoker = st.radio("Êtes-vous Fumeur", ["non_Fumeur", "Fumeur"])
+    smoker = st.checkbox("Êtes-vous Fumeur", False)
+    st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}")
 
     poids = st.number_input("Entrez votre Poids (kg)", min_value=0.00, max_value=150.00, value=70.00)
     st.write(f"Votre poids est {poids} kg")
@@ -62,20 +66,93 @@ def page_prediction():
 
 
     children = st.number_input("Entrez le nombre(s) d'enfant(s)", min_value=0, value=0)
-    st.write(f"Vous avez {children} enfant(s)")
+    if children == 1:
+        st.write(f"Vous avez {children} enfant")
+    elif children == 0:
+        st.write(f"Vous n'avez pas d'enfants")
+    else:
+     st.write(f"Vous avez {children} enfants")
+  
 
 
     # Ajoutez un champ de sélection avec 4 options
     region = st.selectbox("Sélectionnez une region", ["northwest", "northeast", "southwest", "southeast"])
     
     # Affichez la valeur sélectionnée
-    st.write(f"Option sélectionnée : {region}")
+    st.write(f"Vous habitez au {region}")
     
-
+    
+    if sex=='Homme':
+        sex == 0
+    else:
+        sex==1
     # Ajoutez un bouton pour déclencher la prédiction
     if st.button("Prédire le Prix de l'Assurance"):
         # Ajoutez ici la logique de prédiction en utilisant les données saisies
-        st.success("Prédiction effectuée avec succès !")
+        with open('modele.pkl', 'rb') as file:
+            model = pickle.load(file)
+            
+            input_data = np.array([[sex,age, bmi, smoker, children, region]])
+
+            prediction = model.predict(input_data)
+            st.write(f"Prédiction des Charges Médicales : {prediction[0]}")
+            if st.sidebar.button("Prédire les Charges Médicales"):
+                with open('modele.pkl', 'rb') as file:
+                    grid_search = pickle.load(file)
+                    dico_params = {'age': [age], 'sex': [sex], 'bmi': [bmi], 'smoker': [smoker], 'children': [children], 'region': [region]}
+                    
+                    stupid_encodage = dico_params['sex'][0]
+                    for stupid in stupid_encodage:
+                        new_col_name = f'is_{stupid}'
+                        dico_params[new_col_name] = (dico_params['sex'] == stupid).astype(int)
+    print(dico_params)
+#         dico_params['is_male'] = 1 if 'Homme' in parametre_sexe else 0
+#         dico_params['is_female'] = 1 if 'Femme' in parametre_sexe else 0
+#         dico_params['sex'] = 1 if parametre_sexe == 'Femme' else 0
+
+#         dico_params['is_smoker'] = 1 if parametre_fumeur else 0
+#         dico_params['is_not_smoker'] = 1 if not parametre_fumeur else 0
+#         dico_params['smoker'] = 1 if parametre_fumeur else 0
+
+
+#         # Ajouter de nouvelles clés et valeurs pour chaque région
+#         dico_params['NordOuest'] = 1 if 'northwest' in parametre_region else 0
+#         dico_params['NordEast'] = 1 if 'northeast' in parametre_region else 0
+#         dico_params['SudOuest'] = 1 if 'southwest' in parametre_region else 0
+#         dico_params['SudEast'] = 1 if 'southeast' in parametre_region else 0
+#         dico_params.pop('region')   
+
+#         dico_params['children_0'] = 1 if '0' in parametre_region else 0
+#         dico_params['children_1'] = 1 if '1' in parametre_region else 0
+#         dico_params['children_2'] = 1 if '2' in parametre_region else 0
+#         dico_params['children_3'] = 1 if '3' in parametre_region else 0
+#         dico_params['children_4'] = 1 if '4' in parametre_region else 0
+#         dico_params['children_5'] = 1 if '5' in parametre_region else 0
+       
+
+#         dico_params['Insuffisance pondérale'] = int(bmi < 18.5)
+#         dico_params['Poids normal'] = int(18.5 <= bmi < 24.9)
+#         dico_params['Surpoids'] = int(24.9 <= bmi < 29.9)
+#         dico_params['Obésité de classe I (modérée)'] = int(29.9 <= bmi < 34.9)
+#         dico_params['Obésité de classe II (sévère)'] = int(bmi >= 34.9)
+
+#         dico_params['Jeune'] = 1 if int(parametre_age < 21) else 0
+#         dico_params['Adulte'] = 1 if int(35 <= parametre_age < 50) else 0
+#         dico_params['Adulte moyen'] = 1 if int(50 <= parametre_age < 65) else 0
+#         dico_params['Senior'] = 1 if int(65 <= parametre_age < 75) else 0
+#         dico_params['Très senior'] = 1 if int(parametre_age >= 75) else 0
+
+#         input_data = pd.DataFrame(dico_params)
+
+#         # input_data_poly = grid_search.best_estimator_.named_steps['polynomialfeatures'].transform(input_data)
+
+#         # Faire la prédiction
+#         # prediction = grid_search.best_estimator_.named_steps['lasso'].predict(input_data_poly)
+#         prediction = grid_search.predict(input_data)
+
+
+#     st.write(f"Prédiction des Charges Médicales : {prediction}")
+            st.success("Prédiction effectuée avec succès !")
 
 if __name__ == "__main__":
     page_prediction()
@@ -97,21 +174,12 @@ if __name__ == "__main__":
 
 
 
-# if parametre_enfants == 1:
-#     st.write(f"Vous avez {parametre_enfants} enfant")
-# elif parametre_enfants == 0:
-#     st.write(f"Vous n'avez pas d'enfants")
-# else:
-#     st.write(f"Vous avez {parametre_enfants} enfants")
-
-# st.write(f"Vous habitez au {parametre_region}")
-# st.write(f"Vous êtes {'fumeur' if parametre_fumeur else 'non fumeur'}")
 
 
-# if parametre_sexe=='Homme':
-#     parametre_sexe == 0
-# else:
-#     parametre_sexe==1
+
+
+
+
 
 # if st.sidebar.button("Prédire les Charges Médicales"):
 #     with open('modele.pkl', 'rb') as file:
@@ -121,3 +189,57 @@ if __name__ == "__main__":
 
 #         prediction = model.predict(input_data)
 #     st.write(f"Prédiction des Charges Médicales : {prediction[0]}")
+# if st.sidebar.button("Prédire les Charges Médicales"):
+#     with open('modele.pkl', 'rb') as file:
+#         grid_search = pickle.load(file)
+
+#         dico_params = {'age': [parametre_age], 'sex': [parametre_sexe], 'bmi': [bmi], 'smoker': [parametre_fumeur],
+#                        'children': [parametre_enfants], 'region': [parametre_region]}
+
+#         # Convertir le genre en 1 (Homme) ou 0 (Femme)
+#         dico_params['is_male'] = 1 if 'Homme' in parametre_sexe else 0
+#         dico_params['is_female'] = 1 if 'Femme' in parametre_sexe else 0
+#         dico_params['sex'] = 1 if parametre_sexe == 'Femme' else 0
+
+#         dico_params['is_smoker'] = 1 if parametre_fumeur else 0
+#         dico_params['is_not_smoker'] = 1 if not parametre_fumeur else 0
+#         dico_params['smoker'] = 1 if parametre_fumeur else 0
+
+
+#         # Ajouter de nouvelles clés et valeurs pour chaque région
+#         dico_params['NordOuest'] = 1 if 'northwest' in parametre_region else 0
+#         dico_params['NordEast'] = 1 if 'northeast' in parametre_region else 0
+#         dico_params['SudOuest'] = 1 if 'southwest' in parametre_region else 0
+#         dico_params['SudEast'] = 1 if 'southeast' in parametre_region else 0
+#         dico_params.pop('region')   
+
+#         dico_params['children_0'] = 1 if '0' in parametre_region else 0
+#         dico_params['children_1'] = 1 if '1' in parametre_region else 0
+#         dico_params['children_2'] = 1 if '2' in parametre_region else 0
+#         dico_params['children_3'] = 1 if '3' in parametre_region else 0
+#         dico_params['children_4'] = 1 if '4' in parametre_region else 0
+#         dico_params['children_5'] = 1 if '5' in parametre_region else 0
+       
+
+#         dico_params['Insuffisance pondérale'] = int(bmi < 18.5)
+#         dico_params['Poids normal'] = int(18.5 <= bmi < 24.9)
+#         dico_params['Surpoids'] = int(24.9 <= bmi < 29.9)
+#         dico_params['Obésité de classe I (modérée)'] = int(29.9 <= bmi < 34.9)
+#         dico_params['Obésité de classe II (sévère)'] = int(bmi >= 34.9)
+
+#         dico_params['Jeune'] = 1 if int(parametre_age < 21) else 0
+#         dico_params['Adulte'] = 1 if int(35 <= parametre_age < 50) else 0
+#         dico_params['Adulte moyen'] = 1 if int(50 <= parametre_age < 65) else 0
+#         dico_params['Senior'] = 1 if int(65 <= parametre_age < 75) else 0
+#         dico_params['Très senior'] = 1 if int(parametre_age >= 75) else 0
+
+#         input_data = pd.DataFrame(dico_params)
+
+#         # input_data_poly = grid_search.best_estimator_.named_steps['polynomialfeatures'].transform(input_data)
+
+#         # Faire la prédiction
+#         # prediction = grid_search.best_estimator_.named_steps['lasso'].predict(input_data_poly)
+#         prediction = grid_search.predict(input_data)
+
+
+#     st.write(f"Prédiction des Charges Médicales : {prediction}")
