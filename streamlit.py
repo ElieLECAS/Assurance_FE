@@ -71,10 +71,10 @@ def page_prediction():
 
 
             input_data = pd.DataFrame(dico_params)
-
+            
+            input_data['sex'].replace(['Homme', 'Femme'], [0,1], inplace=True)
             input_data['is_male'] = (input_data['sex'] == 0).astype(int)
             input_data['is_female'] = (input_data['sex'] == 1).astype(int)
-            input_data['sex'].replace(['Homme', 'Femme'], [0,1], inplace=True)
             # stupid_encodage = dico_params['sex'][0]
             # for stupid in stupid_encodage:
             #     new_col_name = f'is_{stupid}'
