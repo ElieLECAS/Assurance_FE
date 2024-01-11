@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from datetime import datetime, timedelta
 
+
 def calculate_age(birthdate):
     today = datetime.now()
     age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
@@ -19,16 +20,15 @@ def page_prediction():
         "Utilisez cette page pour entrer les données nécessaires à la prédiction du prix de l'assurance."
     )
 
-    # Ajoutez un champ de sélection de date pour la date de naissance avec le format jour-mois-année
-    birthdate = st.date_input("Date de Naissance", format="DD/MM/YYYY")
+    birthdate = st.date_input("Veuillez sélectionner votre date de naissance.", format="DD/MM/YYYY")
+    min_age_required = 18
+    if birthdate:
+        age = calculate_age(birthdate)
+        if age < min_age_required:
+            st.error(f"Vous devez avoir au moins {min_age_required} ans pour utiliser cette application.")
+        else:
+            st.write(f"Âge actuel : {age} ans")
 
-    # Calculez automatiquement l'âge en fonction de la date de naissance
-    age = calculate_age(birthdate)
-
-    # Affichez l'âge calculé
-    st.write(f"Âge actuel : {age} ans")
-
-    # Ajoutez ici d'autres champs de saisie des données (sex, bmi, etc.)
     sex = st.radio("Sexe", ["Homme", "Femme"])
 
     smoker = st.checkbox("Êtes-vous Fumeur", False)
@@ -40,8 +40,8 @@ def page_prediction():
     taille = st.number_input("Entrez votre Taille (cm)", min_value=0.00, max_value=220.00, value=170.00)
     st.write(f"Votre taille est {taille/100} m")
 
-    bmi = round(poids / (taille /100)**2,2)
-    st.write(f"Votre imc est de {bmi}")
+    bmi = round(poids / (taille / 100)**2, 2)
+    st.write(f"Votre IMC est de {bmi}")
 
     children = st.number_input("Entrez le nombre(s) d'enfant(s)", min_value=0, value=0)
     if children == 1:
@@ -51,79 +51,85 @@ def page_prediction():
     else:
         st.write(f"Vous avez {children} enfants")
 
-    # Ajoutez un champ de sélection avec 4 options
-    region = st.selectbox("Sélectionnez une region", ["northwest", "northeast", "southwest", "southeast"])
-    
-    # Affichez la valeur sélectionnée
+    region = st.selectbox("Sélectionnez une région", ["northwest", "northeast", "southwest", "southeast"])
     st.write(f"Vous habitez au {region}")
-    
-    if sex == 'Homme':
-        sex = 0
-    else:
-        sex = 1
+
+
 
     # Ajoutez un bouton pour déclencher la prédiction
     if st.button("Prédire le Prix de l'Assurance"):
-        # Ajoutez ici la logique de prédiction en utilisant les données saisies
         with open('modele.pkl', 'rb') as file:
-            model = pickle.load(file)
-            
-            input_data = np.array([[sex, age, bmi, smoker, children, region]])
+            grid_search = pickle.load(file)
+            dico_params = {'age': [age], 'sex': [sex], 'bmi': [bmi], 'smoker': [smoker], 'children': [children], 'region': [region]}
 
-            prediction = model.predict(input_data)
-            st.write(f"Prédiction des Charges Médicales : {prediction[0]}")
-            
-            if st.sidebar.button("Prédire les Charges Médicales"):
-                with open('modele.pkl', 'rb') as file:
-                    grid_search = pickle.load(file)
-                    dico_params = {'age': [age], 'sex': [sex], 'bmi': [bmi], 'smoker': [smoker], 'children': [children], 'region': [region]}
-                    
-                    stupid_encodage = dico_params['sex'][0]
-                    for stupid in stupid_encodage:
-                        new_col_name = f'is_{stupid}'
-                        dico_params[new_col_name] = (dico_params['sex'] == stupid).astype(int)
-                    dico_params.rename(columns={'is_Homme': 'is_male', 'is_Femme': 'is_female'}, inplace=True)
-                    dico_params['sex'] = 1 if sex == 'Femme' else 0
-
-                    idiot_encodage = dico_params['smoker'][0]
-                    for idiot in idiot_encodage:
-                        new_col_name = f'is_{idiot}'
-                        dico_params[new_col_name] = (dico_params['smoker'] == idiot).astype(int)
-                    dico_params.rename(columns={'is_fumeur': 'is_smoker', 'non_fumeur': 'is_not_smoker'}, inplace=True)
-                    dico_params['smoker'] = 1 if smoker == 'fumeur' else 0
-
-                    imbecile_encodage = dico_params['region'][0]
-                    for imbecile in imbecile_encodage:
-                        new_col_name = f'is_{imbecile}'
-                        dico_params[new_col_name] = (dico_params['region'] == imbecile).astype(int)
-                    dico_params.pop('region')
-
-                    gremlins_encodage = dico_params['children'][0]
-                    for gremlins in gremlins_encodage:
-                        new_col_name = f'children_{gremlins}'
-                        dico_params[new_col_name] = (dico_params['children'] == gremlins).astype(int)
-
-                    dico_params['Insuffisance pondérale'] = int(bmi < 18.5)
-                    dico_params['Poids normal'] = int(18.5 <= bmi < 24.9)
-                    dico_params['Surpoids'] = int(24.9 <= bmi < 29.9)
-                    dico_params['Obésité de classe I (modérée)'] = int(29.9 <= bmi < 34.9)
-                    dico_params['Obésité de classe II (sévère)'] = int(bmi >= 34.9)
-                     
-                    dico_params['Jeune'] = 1 if int(age < 21) else 0
-                    dico_params['Adulte'] = 1 if int(35 <= age < 50) else 0
-                    dico_params['Adulte moyen'] = 1 if int(50 <= age < 65) else 0
-                    dico_params['Senior'] = 1 if int(65 <= age < 75) else 0
-                    dico_params['Très senior'] = 1 if int(age >= 75) else 0
-
-                    input_data = pd.DataFrame(dico_params)
-                    input_data_poly = grid_search.best_estimator_.named_steps['polynomialfeatures'].transform(input_data)
-                    # Faire la prédiction
-                    # prediction = grid_search.best_estimator_.named_steps['lasso'].predict(input_data_poly)
-                    prediction = grid_search.predict(input_data)
+            dico_params['children_0'] = 1 if 0 in [children] else 0
+            dico_params['children_1'] = 1 if 1 in [children] else 0
+            dico_params['children_2'] = 1 if 2 in [children] else 0
+            dico_params['children_3'] = 1 if 3 in [children] else 0
+            dico_params['children_4'] = 1 if 4 in [children] else 0
+            dico_params['children_5'] = 1 if 5 in [children] else 0
 
 
-        st.write(f"Prédiction des Charges Médicales : {prediction}")
+            input_data = pd.DataFrame(dico_params)
+
+            input_data['sex'].replace(['Homme', 'Femme'], [0,1], inplace=True)
+            input_data['is_male'] = (input_data['sex'] == 0).astype(int)
+            input_data['is_female'] = (input_data['sex'] == 1).astype(int)
+            # stupid_encodage = dico_params['sex'][0]
+            # for stupid in stupid_encodage:
+            #     new_col_name = f'is_{stupid}'
+            #     input_data[new_col_name] = (dico_params['sex'] == stupid).astype(int)
+            # input_data.rename(columns={'is_0': 'is_male', 'is_1': 'is_female'}, inplace=True)
+            # input_data['sex'] = 1 if sex == 'Femme' else 0
+
+            input_data['smoker'].replace([False, True], [0,1], inplace=True)
+            input_data['is_smoker'] = (input_data['smoker'] == 1).astype(int)
+            input_data['is_not_smoker'] = (input_data['smoker'] == 1).astype(int)
+            # idiot_encodage = dico_params['smoker'][0]
+            # for idiot in idiot_encodage:
+            #     new_col_name = f'is_{idiot}'
+            #     input_data[new_col_name] = (dico_params['smoker'] == idiot).astype(int)
+            # input_data.rename(columns={'is_fumeur': 'is_smoker', 'non_fumeur': 'is_not_smoker'}, inplace=True)
+            # input_data['smoker'] = 1 if smoker == 'fumeur' else 0
+
+            # imbecile_encodage = input_data['region'].unique()
+            # for imbecile in imbecile_encodage:
+            #     new_col_name = f'is_{imbecile}'
+            #     input_data[new_col_name] = (input_data['region'] == imbecile).astype(int)
+            # input_data.pop('region')
+            input_data['is_northwest'] = input_data['region'].str.contains('northwest').astype(int)
+            input_data['is_northeast'] = input_data['region'].str.contains('northeast').astype(int)
+            input_data['is_southwest'] = input_data['region'].str.contains('southwest').astype(int)
+            input_data['is_southeast'] = input_data['region'].str.contains('southeast').astype(int)
+            input_data = input_data.drop('region', axis=1)
+
+            # gremlins_encodage = input_data['children'].unique()
+            # for gremlins in gremlins_encodage:
+            #     new_col_name = f'children_{gremlins}'
+            #     input_data[new_col_name] = (input_data['children'] == gremlins).astype(int)
+
+            input_data['Insuffisance pondérale'] = (input_data['bmi'] < 18.5).astype(int)
+            input_data['Poids normal'] = ((input_data['bmi'] >= 18.5) & (input_data['bmi'] < 24.9)).astype(int)
+            input_data['Surpoids'] = ((input_data['bmi'] >= 24.9) & (input_data['bmi'] < 29.9)).astype(int)
+            input_data['Obésité de classe I (modérée)'] = ((input_data['bmi'] >= 29.9) & (input_data['bmi'] < 34.9)).astype(int)
+            input_data['Obésité de classe II (sévère)'] = (input_data['bmi'] >= 34.9).astype(int)
+
+            input_data['Jeune'] = (input_data['age'] < 21).astype(int)
+            input_data['Adulte'] = ((input_data['age'] >= 35) & (input_data['age'] < 50)).astype(int)
+            input_data['Adulte moyen'] = ((input_data['age'] >= 50) & (input_data['age'] < 65)).astype(int)
+            input_data['Senior'] = ((input_data['age'] >= 65) & (input_data['age'] < 75)).astype(int)
+            input_data['Très senior'] = (input_data['age'] >= 75).astype(int)
+
+
+
+            # Faire la prédiction
+            prediction = grid_search.predict(input_data)
+            st.write(f"Prédiction des Charges Médicales : {prediction}")
 
 if __name__ == "__main__":
     page_prediction()
+
+
+
+
 
