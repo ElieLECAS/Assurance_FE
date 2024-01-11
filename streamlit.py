@@ -62,17 +62,17 @@ def page_prediction():
                 grid_search = pickle.load(file)
                 age = calculate_age(birthdate)
 
-
-                feature_names = grid_search.best_estimator_.named_steps['preprocessor'].get_feature_names_out(input_data.columns)
-
-                input_data = pd.DataFrame(data=[age, sex, bmi, smoker, children, region], index=feature_names).T
+                dico_params = {'age': age, 'sex': sex, 'bmi': bmi, 'smoker': smoker,
+                            'children': children, 'region': region}
+                
+                input_data = pd.DataFrame([dico_params])
 
                 prediction = grid_search.predict(input_data)
-                st.write(f"Prédiction des Charges Médicales : {prediction}")
+
+                st.write(f"Prédiction des Charges Médicales : {str(prediction)}")
 
         except Exception as e:
             st.error(f"Erreur lors du chargement du modèle : {e}")
 
 if __name__ == "__main__":
     page_prediction()
-
