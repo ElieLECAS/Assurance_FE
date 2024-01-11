@@ -4,54 +4,15 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.preprocessing import PolynomialFeatures
+from sklearn.preprocessing import RobustScaler, OneHotEncoder, PolynomialFeatures
 from datetime import datetime, timedelta
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import Lasso
 
 def calculate_age(birthdate):
     today = datetime.now()
     age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
     return age
-
-def preprocess_input(age, sex, smoker, children, region, poids, taille):
-    # Create a DataFrame with the input data
-    dico_params = {'age': [age], 'sex': [sex], 'bmi': [poids / (taille / 100)**2], 'smoker': [smoker], 'children': [children], 'region': [region]}
-
-    dico_params['children_0'] = 1 if 0 in [children] else 0
-    dico_params['children_1'] = 1 if 1 in [children] else 0
-    dico_params['children_2'] = 1 if 2 in [children] else 0
-    dico_params['children_3'] = 1 if 3 in [children] else 0
-    dico_params['children_4'] = 1 if 4 in [children] else 0
-    dico_params['children_5'] = 1 if 5 in [children] else 0
-
-    input_data = pd.DataFrame(dico_params)
-
-    input_data['sex'].replace(['Homme', 'Femme'], [0,1], inplace=True)
-    input_data['is_male'] = (input_data['sex'] == 0).astype(int)
-    input_data['is_female'] = (input_data['sex'] == 1).astype(int)
-
-    input_data['smoker'].replace([False, True], [0,1], inplace=True)
-    input_data['is_smoker'] = (input_data['smoker'] == 1).astype(int)
-    input_data['is_not_smoker'] = (input_data['smoker'] == 1).astype(int)
-    
-    input_data['is_northwest'] = input_data['region'].str.contains('northwest').astype(int)
-    input_data['is_northeast'] = input_data['region'].str.contains('northeast').astype(int)
-    input_data['is_southwest'] = input_data['region'].str.contains('southwest').astype(int)
-    input_data['is_southeast'] = input_data['region'].str.contains('southeast').astype(int)
-    input_data = input_data.drop('region', axis=1)
-
-    input_data['Insuffisance_pondérale'] = (input_data['bmi'] < 18.5).astype(int)
-    input_data['Poids_normal'] = ((input_data['bmi'] >= 18.5) & (input_data['bmi'] < 24.9)).astype(int)
-    input_data['Surpoids'] = ((input_data['bmi'] >= 24.9) & (input_data['bmi'] < 29.9)).astype(int)
-    input_data['Obésité_de_classe_I_(modérée)'] = ((input_data['bmi'] >= 29.9) & (input_data['bmi'] < 34.9)).astype(int)
-    input_data['Obésité_de_classe_II_(sévère)'] = (input_data['bmi'] >= 34.9).astype(int)
-
-    input_data['Jeune'] = (input_data['age'] < 21).astype(int)
-    input_data['Adulte'] = ((input_data['age'] >= 35) & (input_data['age'] < 50)).astype(int)
-    input_data['Adulte_moyen'] = ((input_data['age'] >= 50) & (input_data['age'] < 65)).astype(int)
-    input_data['Senior'] = ((input_data['age'] >= 65) & (input_data['age'] < 75)).astype(int)
-    input_data['Très_senior'] = (input_data['age'] >= 75).astype(int)
-
-    return input_data
 
 def page_prediction():
     st.title("Assur'ément - Saisie de Données pour la Prédiction")
@@ -99,12 +60,13 @@ def page_prediction():
         try:
             with open('modele.pkl', 'rb') as file:
                 grid_search = pickle.load(file)
-
-                # Retrieve user input
                 age = calculate_age(birthdate)
-                input_data = preprocess_input(age, sex, smoker, children, region, poids, taille)
 
-                # Make prediction
+
+                feature_names = grid_search.best_estimator_.named_steps['preprocessor'].get_feature_names_out(input_data.columns)
+
+                input_data = pd.DataFrame(data=[age, sex, bmi, smoker, children, region], index=feature_names).T
+
                 prediction = grid_search.predict(input_data)
                 st.write(f"Prédiction des Charges Médicales : {prediction}")
 
@@ -113,8 +75,4 @@ def page_prediction():
 
 if __name__ == "__main__":
     page_prediction()
-
-
-
-
 
