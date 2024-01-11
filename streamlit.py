@@ -14,6 +14,20 @@ def calculate_age(birthdate):
     age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
     return age
 
+def preprocess_input(age, sex, smoker, children, region, poids, taille):
+    
+    dico_params = {'age': [age], 'sex': [sex], 'bmi': [poids / (taille / 100)**2, 2], 'smoker': [smoker], 'children': [children], 'region': [region]}
+    input_data = pd.DataFrame(dico_params)
+
+   
+    input_data['sex'] = input_data['sex'].replace(['Homme', 'Femme'], [0, 1])
+
+ 
+    input_data = pd.get_dummies(input_data, columns=['region'], drop_first=True)
+
+    
+    return input_data
+
 def page_prediction():
     st.title("Assur'ément - Saisie de Données pour la Prédiction")
 
@@ -55,21 +69,18 @@ def page_prediction():
     region = st.selectbox("Sélectionnez une région", ["northwest", "northeast", "southwest", "southeast"])
     st.write(f"Vous habitez au {region}")
 
-
     if st.button("Prédire le Prix de l'Assurance"):
         try:
             with open('modele.pkl', 'rb') as file:
                 grid_search = pickle.load(file)
                 age = calculate_age(birthdate)
 
-                dico_params = {'age': age, 'sex': sex, 'bmi': bmi, 'smoker': smoker,
-                            'children': children, 'region': region}
+               
+                input_data = preprocess_input(age, sex, smoker, children, region, poids, taille)
+
                 
-                input_data = pd.DataFrame([dico_params])
-
                 prediction = grid_search.predict(input_data)
-
-                st.write(f"Prédiction des Charges Médicales : {str(prediction)}")
+                st.write(f"Prédiction des Charges Médicales : {prediction}")
 
         except Exception as e:
             st.error(f"Erreur lors du chargement du modèle : {e}")
