@@ -40,8 +40,8 @@ if st.sidebar.button("Prédire les Charges Médicales"):
     with open('modele.pkl', 'rb') as file:
         grid_search = pickle.load(file)
 
-        dico_params = {'age': age, 'sex': sex, 'bmi': bmi, 'smoker': smoker,
-                       'children': children, 'region': region}
+        dico_params = {'age': [age], 'sex': [sex], 'bmi': [bmi], 'smoker': [smoker],
+                       'children': [children], 'region': [region]}
          
         input_data = pd.DataFrame([dico_params])
 
