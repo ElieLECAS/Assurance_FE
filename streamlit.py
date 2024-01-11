@@ -40,16 +40,10 @@ if st.sidebar.button("Prédire les Charges Médicales"):
     with open('modele.pkl', 'rb') as file:
         grid_search = pickle.load(file)
 
-        # dico_params = {'age': [age], 'sex': [sex], 'bmi': 'bmi', 'smoker': [smoker],
-        #                'children': [children], 'region': [region]}
-
-        feature_names = grid_search.best_estimator_.named_steps['preprocessor'].get_feature_names_out(input_data.columns)
-
-        # Create a new DataFrame with the correct feature names
-        input_data = pd.DataFrame(data=[age, sex, bmi, smoker, children, region], index=feature_names).T
-
+        dico_params = {'age': age, 'sex': sex, 'bmi': bmi, 'smoker': smoker,
+                       'children': children, 'region': region}
          
-        # input_data = pd.DataFrame(dico_params)
+        input_data = pd.DataFrame([dico_params])
 
         prediction = grid_search.predict(input_data)
 
