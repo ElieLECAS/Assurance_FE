@@ -20,9 +20,14 @@ def page_prediction():
         "Utilisez cette page pour entrer les données nécessaires à la prédiction du prix de l'assurance."
     )
 
-    birthdate = st.date_input("Date de Naissance", format="DD/MM/YYYY")
-    age = calculate_age(birthdate)
-    st.write(f"Âge actuel : {age} ans")
+    birthdate = st.date_input("Veuillez sélectionner votre date de naissance.", format="DD/MM/YYYY")
+    min_age_required = 18
+    if birthdate:
+        age = calculate_age(birthdate)
+        if age < min_age_required:
+            st.error(f"Vous devez avoir au moins {min_age_required} ans pour utiliser cette application.")
+        else:
+            st.write(f"Âge actuel : {age} ans")
 
     sex = st.radio("Sexe", ["Homme", "Femme"])
 
