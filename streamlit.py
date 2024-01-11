@@ -62,17 +62,31 @@ def page_prediction():
 
                 age = calculate_age(birthdate)
 
-                dico_params = {'age': [age], 'sex': [sex], 'bmi': [bmi], 'smoker': [smoker],
-                       'children': [children], 'region': [region]}
-                
-                input_data = pd.DataFrame([dico_params])
+                sex_mapping = {'Homme': 'male', 'Femme': 'female'}
+                sex = sex_mapping.get(sex, sex)
+
+                input_data = pd.DataFrame({
+                    'age': [age],
+                    'sex': [sex],
+                    'bmi': [bmi],
+                    'smoker': [smoker],
+                    'children': [children],
+                    'region': [region]
+                })
+
+                input_data['age'] = input_data['age'].astype(float)
+
+                input_data = input_data.fillna(0)
+
+                print("Input Data:")
+                print(input_data)
 
                 prediction = grid_search.predict(input_data)
-
                 st.write(f"Prédiction des Charges Médicales : {prediction}")
 
         except Exception as e:
             st.error(f"Erreur lors du chargement du modèle : {e}")
+
 
 if __name__ == "__main__":
     page_prediction()
