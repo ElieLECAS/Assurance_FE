@@ -77,7 +77,7 @@ def page_prediction():
                     for stupid in stupid_encodage:
                         new_col_name = f'is_{stupid}'
                         dico_params[new_col_name] = (dico_params['sex'] == stupid).astype(int)
-                    dico_params.rename(columns={'is_Homme': 'is_male', 'is_Femme': 'is_female'}, inplace=True)
+                    dico_params.rename(columns={'is_0': 'is_male', 'is_1': 'is_female'}, inplace=True)
                     dico_params['sex'] = 1 if sex == 'Femme' else 0
 
                     idiot_encodage = dico_params['smoker'][0]
