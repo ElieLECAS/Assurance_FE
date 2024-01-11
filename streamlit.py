@@ -74,8 +74,6 @@ def page_prediction():
                     'region': [region]
                 })
 
-                input_data['age'] = input_data['age'].astype(float)
-
                 input_data = input_data.fillna(0)
 
                 print("Input Data:")
