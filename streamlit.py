@@ -62,6 +62,9 @@ def page_prediction():
 
                 age = calculate_age(birthdate)
 
+                smoker_mapping = { True : 'yes', False : 'no'}
+                smoker = smoker_mapping.get(smoker, smoker)
+
                 sex_mapping = {'Homme': 'male', 'Femme': 'female'}
                 sex = sex_mapping.get(sex, sex)
 
