@@ -54,16 +54,21 @@ def page_prediction():
     region = st.selectbox("Sélectionnez une région", ["northwest", "northeast", "southwest", "southeast"])
     st.write(f"Vous habitez au {region}")
 
-    if sex == 'Homme':
-        sex = 0
-    else:
-        sex = 1
+
 
     # Ajoutez un bouton pour déclencher la prédiction
     if st.button("Prédire le Prix de l'Assurance"):
         with open('modele.pkl', 'rb') as file:
             grid_search = pickle.load(file)
             dico_params = {'age': [age], 'sex': [sex], 'bmi': [bmi], 'smoker': [smoker], 'children': [children], 'region': [region]}
+
+            dico_params['children_0'] = 1 if 0 in [children] else 0
+            dico_params['children_1'] = 1 if 1 in [children] else 0
+            dico_params['children_2'] = 1 if 2 in [children] else 0
+            dico_params['children_3'] = 1 if 3 in [children] else 0
+            dico_params['children_4'] = 1 if 4 in [children] else 0
+            dico_params['children_5'] = 1 if 5 in [children] else 0
+
 
             input_data = pd.DataFrame(dico_params)
 
@@ -87,28 +92,33 @@ def page_prediction():
             # input_data.rename(columns={'is_fumeur': 'is_smoker', 'non_fumeur': 'is_not_smoker'}, inplace=True)
             # input_data['smoker'] = 1 if smoker == 'fumeur' else 0
 
-            imbecile_encodage = input_data['region'].unique()
-            for imbecile in imbecile_encodage:
-                new_col_name = f'is_{imbecile}'
-                input_data[new_col_name] = (input_data['region'] == imbecile).astype(int)
-            input_data.pop('region')
+            # imbecile_encodage = input_data['region'].unique()
+            # for imbecile in imbecile_encodage:
+            #     new_col_name = f'is_{imbecile}'
+            #     input_data[new_col_name] = (input_data['region'] == imbecile).astype(int)
+            # input_data.pop('region')
+            input_data['is_northwest'] = input_data['region'].str.contains('northwest').astype(int)
+            input_data['is_northeast'] = input_data['region'].str.contains('northeast').astype(int)
+            input_data['is_southwest'] = input_data['region'].str.contains('southwest').astype(int)
+            input_data['is_southeast'] = input_data['region'].str.contains('southeast').astype(int)
+            input_data = input_data.drop('region', axis=1)
 
-            gremlins_encodage = input_data['children'].unique()
-            for gremlins in gremlins_encodage:
-                new_col_name = f'children_{gremlins}'
-                input_data[new_col_name] = (input_data['children'] == gremlins).astype(int)
+            # gremlins_encodage = input_data['children'].unique()
+            # for gremlins in gremlins_encodage:
+            #     new_col_name = f'children_{gremlins}'
+            #     input_data[new_col_name] = (input_data['children'] == gremlins).astype(int)
 
-                input_data['Insuffisance pondérale'] = (input_data['bmi'] < 18.5).astype(int)
-                input_data['Poids normal'] = ((input_data['bmi'] >= 18.5) & (input_data['bmi'] < 24.9)).astype(int)
-                input_data['Surpoids'] = ((input_data['bmi'] >= 24.9) & (input_data['bmi'] < 29.9)).astype(int)
-                input_data['Obésité de classe I (modérée)'] = ((input_data['bmi'] >= 29.9) & (input_data['bmi'] < 34.9)).astype(int)
-                input_data['Obésité de classe II (sévère)'] = (input_data['bmi'] >= 34.9).astype(int)
+            input_data['Insuffisance pondérale'] = (input_data['bmi'] < 18.5).astype(int)
+            input_data['Poids normal'] = ((input_data['bmi'] >= 18.5) & (input_data['bmi'] < 24.9)).astype(int)
+            input_data['Surpoids'] = ((input_data['bmi'] >= 24.9) & (input_data['bmi'] < 29.9)).astype(int)
+            input_data['Obésité de classe I (modérée)'] = ((input_data['bmi'] >= 29.9) & (input_data['bmi'] < 34.9)).astype(int)
+            input_data['Obésité de classe II (sévère)'] = (input_data['bmi'] >= 34.9).astype(int)
 
-                input_data['Jeune'] = (input_data['age'] < 21).astype(int)
-                input_data['Adulte'] = ((input_data['age'] >= 35) & (input_data['age'] < 50)).astype(int)
-                input_data['Adulte moyen'] = ((input_data['age'] >= 50) & (input_data['age'] < 65)).astype(int)
-                input_data['Senior'] = ((input_data['age'] >= 65) & (input_data['age'] < 75)).astype(int)
-                input_data['Très senior'] = (input_data['age'] >= 75).astype(int)
+            input_data['Jeune'] = (input_data['age'] < 21).astype(int)
+            input_data['Adulte'] = ((input_data['age'] >= 35) & (input_data['age'] < 50)).astype(int)
+            input_data['Adulte moyen'] = ((input_data['age'] >= 50) & (input_data['age'] < 65)).astype(int)
+            input_data['Senior'] = ((input_data['age'] >= 65) & (input_data['age'] < 75)).astype(int)
+            input_data['Très senior'] = (input_data['age'] >= 75).astype(int)
 
 
 
