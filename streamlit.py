@@ -3,6 +3,7 @@ import pickle
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import PolynomialFeatures
+from sklearn.impute import SimpleImputer
 
 
 
@@ -36,16 +37,20 @@ st.write(f"Vous habitez au {region}")
 st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}")
 
 
+
+
 if st.sidebar.button("Prédire les Charges Médicales"):
     with open('modele.pkl', 'rb') as file:
-        grid_search = pickle.load(file)
+        model = pickle.load(file)
+        smoker_mapping = { True : 'yes', False : 'no'}      
+        smoker = smoker_mapping.get(smoker, smoker)
 
         dico_params = {'age': [age], 'sex': [sex], 'bmi': [bmi], 'smoker': [smoker],
                        'children': [children], 'region': [region]}
          
-        input_data = pd.DataFrame([dico_params])
-
-        prediction = grid_search.predict(input_data)
+        input_data = pd.DataFrame(dico_params)
+        
+        prediction = model.predict(input_data)
 
 
     st.write(f"Prédiction des Charges Médicales : {str(prediction)}")
