@@ -8,7 +8,7 @@ from sklearn.preprocessing import RobustScaler, OneHotEncoder, PolynomialFeature
 from datetime import datetime, timedelta
 from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import Lasso
-from helpers import select_bmi_column, transform_bmi_features
+from helpers import select_bmi_column, select_age_column, transform_bmi_features, transform_age_features
 
 def calculate_age(birthdate):
     today = datetime.now()
