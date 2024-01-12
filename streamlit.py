@@ -10,13 +10,34 @@ from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import Lasso
 from helpers import select_bmi_column, select_age_column, transform_bmi_features, transform_age_features
 
+
 def calculate_age(birthdate):
     today = datetime.now()
     age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
     return age
 
 def page_prediction():
-    st.title("Assur'ément - Saisie de Données pour la Prédiction")
+
+    st.markdown(
+        """
+        <style>
+            .st-cm {
+                background-color: #f0f0f0; /* Set your desired background color */
+                padding: 20px; /* Optional: Add padding for better appearance */
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    col1, col2 = st.columns([0.35, 3])
+    col1.image('assets/OIG2-removebg-preview.png', width=100)
+    col2.markdown(
+        "<h1 style='color: #87CEEB; display: inline-block; vertical-align: middle;'>SSUR'ÉMENT</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.title("Saisie de Données pour la Prédiction")
 
     st.write(
         "Utilisez cette page pour entrer les données nécessaires à la prédiction du prix de l'assurance."
