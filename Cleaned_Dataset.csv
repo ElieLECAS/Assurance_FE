@@ -1,0 +1,1338 @@
+age,sex,children,smoker,region,charges,imc_category
+19,female,0,yes,southwest,16884.924,Overweight
+18,male,1,no,southeast,1725.5523,Obesity Class I
+28,male,3,no,southeast,4449.462,Obesity Class I
+33,male,0,no,northwest,21984.47061,Normal Weight
+32,male,0,no,northwest,3866.8552,Overweight
+31,female,0,no,southeast,3756.6216,Overweight
+46,female,1,no,southeast,8240.5896,Obesity Class I
+37,female,3,no,northwest,7281.5056,Overweight
+37,male,2,no,northeast,6406.4107,Overweight
+60,female,0,no,northwest,28923.13692,Overweight
+25,male,0,no,northeast,2721.3208,Overweight
+62,female,0,yes,southeast,27808.7251,Overweight
+23,male,0,no,southwest,1826.843,Obesity Class I
+56,female,0,no,southeast,11090.7178,Obesity Class II
+27,male,0,yes,southeast,39611.7577,Obesity Class III
+19,male,1,no,southwest,1837.237,Normal Weight
+52,female,1,no,northeast,10797.3362,Obesity Class I
+23,male,0,no,northeast,2395.17155,Normal Weight
+56,male,0,no,southwest,10602.385,Obesity Class III
+30,male,0,yes,southwest,36837.467,Obesity Class II
+60,female,0,no,northeast,13228.84695,Obesity Class II
+30,female,1,no,southwest,4149.736,Obesity Class I
+18,male,0,no,southeast,1137.011,Obesity Class I
+34,female,1,yes,northeast,37701.8768,Obesity Class I
+37,male,2,no,northwest,6203.90175,Overweight
+59,female,3,no,southeast,14001.1338,Overweight
+63,female,0,no,northeast,14451.83515,Normal Weight
+55,female,2,no,northwest,12268.63225,Obesity Class I
+23,male,1,no,northwest,2775.19215,Underweight
+31,male,2,yes,southwest,38711.0,Obesity Class II
+22,male,0,yes,southwest,35585.576,Obesity Class II
+18,female,0,no,northeast,2198.18985,Overweight
+19,female,5,no,southwest,4687.797,Overweight
+63,male,0,no,northwest,13770.0979,Overweight
+28,male,1,yes,southwest,51194.55914,Obesity Class II
+19,male,0,no,northwest,1625.43375,Normal Weight
+62,female,3,no,northwest,15612.19335,Obesity Class I
+26,male,0,no,southwest,2302.3,Normal Weight
+35,male,1,yes,northeast,39774.2763,Obesity Class II
+60,male,0,yes,southwest,48173.361,Obesity Class II
+24,female,0,no,northeast,3046.062,Overweight
+31,female,2,no,southeast,4949.7587,Obesity Class II
+41,male,1,no,southeast,6272.4772,Normal Weight
+37,female,2,no,southeast,6313.759,Obesity Class I
+38,male,1,no,northeast,6079.6715,Obesity Class II
+55,male,0,no,southwest,20630.28351,Obesity Class II
+18,female,2,no,northeast,3393.35635,Obesity Class II
+28,female,0,no,northwest,3556.9223,Obesity Class I
+60,female,0,no,southeast,12629.8967,Normal Weight
+36,male,1,yes,southeast,38709.176,Obesity Class II
+18,female,0,no,northeast,2211.13075,Obesity Class II
+21,female,2,no,northwest,3579.8287,Obesity Class I
+48,male,1,yes,southwest,23568.272,Overweight
+36,male,0,yes,southeast,37742.5757,Obesity Class I
+40,female,3,no,northwest,8059.6791,Overweight
+58,male,2,yes,northwest,47496.49445,Obesity Class II
+58,female,2,no,northeast,13607.36875,Obesity Class I
+18,male,2,yes,southeast,34303.1672,Obesity Class I
+53,female,1,yes,southeast,23244.7902,Normal Weight
+34,female,2,no,northwest,5989.52365,Obesity Class II
+43,male,3,no,northeast,8606.2174,Overweight
+25,male,4,no,southeast,4504.6624,Obesity Class I
+64,male,1,no,northwest,30166.61817,Normal Weight
+28,female,1,no,northwest,4133.64165,Overweight
+20,female,0,yes,northwest,14711.7438,Normal Weight
+19,female,0,no,southwest,1743.214,Overweight
+61,female,2,no,southwest,14235.072,Obesity Class II
+40,male,1,no,northwest,6389.37785,Overweight
+40,female,0,no,southeast,5920.1041,Obesity Class II
+28,male,3,yes,southeast,17663.1442,Normal Weight
+27,female,0,yes,southeast,16577.7795,Normal Weight
+31,male,5,no,northeast,6799.458,Overweight
+53,female,3,no,southwest,11741.726,Overweight
+58,male,1,no,southeast,11946.6259,Obesity Class I
+44,male,2,no,southwest,7726.854,Overweight
+57,male,0,no,northwest,11356.6609,Obesity Class I
+29,female,1,no,southeast,3947.4131,Overweight
+21,male,0,no,southeast,1532.4697,Obesity Class II
+22,female,0,no,northeast,2755.02095,Obesity Class II
+41,female,0,no,northwest,6571.02435,Obesity Class I
+31,male,1,no,northeast,4441.21315,Overweight
+45,female,0,no,northeast,7935.29115,Obesity Class II
+22,male,1,yes,southeast,37165.1638,Obesity Class II
+48,female,4,no,northwest,11033.6617,Obesity Class III
+37,female,2,yes,southwest,39836.519,Obesity Class I
+45,male,2,yes,northwest,21098.55405,Normal Weight
+57,female,0,yes,northwest,43578.9394,Obesity Class I
+56,female,0,no,southwest,11073.176,Overweight
+46,female,0,no,northwest,8026.6666,Overweight
+55,female,0,no,northwest,11082.5772,Overweight
+21,female,0,no,southeast,2026.9741,Obesity Class II
+53,female,1,no,northwest,10942.13205,Normal Weight
+59,male,3,yes,northeast,30184.9367,Overweight
+35,male,2,no,northwest,5729.0053,Obesity Class I
+64,female,2,yes,southwest,47291.055,Obesity Class I
+28,female,1,no,southeast,3766.8838,Obesity Class II
+54,female,3,no,southwest,12105.32,Obesity Class I
+55,male,0,no,southeast,10226.2842,Obesity Class II
+56,male,0,yes,northeast,22412.6485,Normal Weight
+38,male,0,yes,southwest,15820.699,Normal Weight
+41,female,0,no,southwest,6186.127,Obesity Class I
+30,male,0,no,northeast,3645.0894,Overweight
+18,female,0,no,northeast,21344.8467,Obesity Class I
+61,female,3,yes,southeast,30942.1918,
+34,female,1,no,southwest,5003.853,Overweight
+20,male,1,yes,northwest,17560.37975,Overweight
+19,female,1,no,southwest,2331.519,Overweight
+26,male,2,no,northwest,3877.30425,Obesity Class I
+29,male,0,no,southeast,2867.1196,Overweight
+63,male,0,yes,southeast,47055.5321,Obesity Class II
+54,male,1,no,northwest,10825.2537,Obesity Class I
+55,female,2,no,southwest,11881.358,Overweight
+37,male,0,no,southwest,4646.759,Obesity Class I
+21,female,0,no,northwest,2404.7338,Obesity Class II
+52,male,3,no,northeast,11488.31695,Obesity Class I
+60,male,0,no,northeast,30259.99556,Overweight
+58,male,0,no,southeast,11381.3254,Obesity Class III
+29,female,1,yes,southeast,19107.7796,Overweight
+49,female,0,no,southeast,8601.3293,Overweight
+37,female,2,no,northwest,6686.4313,Normal Weight
+44,male,2,no,southwest,7740.337,Obesity Class II
+18,male,0,no,northeast,1705.6245,Normal Weight
+20,female,0,no,northwest,2257.47525,Overweight
+44,male,1,yes,northeast,39556.4945,Obesity Class I
+47,female,3,no,northwest,10115.00885,Obesity Class I
+26,female,0,no,northeast,3385.39915,Overweight
+19,female,0,yes,southwest,17081.08,Overweight
+52,female,0,no,southwest,9634.538,Obesity Class II
+32,female,2,yes,northwest,32734.1863,Underweight
+38,male,2,no,southwest,6082.405,Obesity Class I
+59,female,0,no,northeast,12815.44495,Overweight
+61,female,0,no,northeast,13616.3586,Normal Weight
+53,female,2,no,southwest,11163.568,Obesity Class II
+19,male,0,no,northwest,1632.56445,Overweight
+20,female,0,no,northeast,2457.21115,Overweight
+22,female,0,no,southeast,2155.6815,Overweight
+19,male,0,no,southwest,1261.442,Obesity Class I
+22,male,0,no,northwest,2045.68525,Overweight
+54,female,3,no,southeast,27322.73386,Obesity Class I
+22,female,0,no,southwest,2166.732,Obesity Class II
+34,male,2,no,northeast,27375.90478,Normal Weight
+26,male,1,no,northeast,3490.5491,Obesity Class I
+34,male,2,yes,southeast,18972.495,Overweight
+29,male,2,no,northwest,18157.876,Overweight
+30,male,3,yes,northwest,20745.9891,Overweight
+29,female,3,no,southeast,5138.2567,Obesity Class II
+46,male,3,yes,northwest,40720.55105,Obesity Class I
+51,female,1,no,southeast,9877.6077,Obesity Class II
+53,female,1,no,northwest,10959.6947,Obesity Class II
+19,male,1,no,southwest,1842.519,Overweight
+35,male,1,no,northwest,5125.2157,Normal Weight
+48,male,0,no,southeast,7789.635,Overweight
+32,female,3,no,northeast,6334.34355,Obesity Class II
+42,female,0,yes,northeast,19964.7463,Normal Weight
+40,female,1,no,northeast,7077.1894,Overweight
+44,male,0,no,northwest,6948.7008,Obesity Class II
+48,male,0,yes,southeast,21223.6758,Normal Weight
+18,male,0,yes,northeast,15518.18025,Overweight
+30,male,0,yes,southeast,36950.2567,Obesity Class II
+50,female,3,no,southeast,19749.38338,Overweight
+42,female,0,yes,northwest,21348.706,Overweight
+18,female,0,yes,southeast,36149.4835,Obesity Class II
+54,male,1,no,southwest,10450.552,Obesity Class II
+32,female,2,no,southwest,5152.134,Overweight
+37,male,0,no,northwest,5028.1466,Overweight
+47,male,4,no,northeast,10407.08585,Overweight
+20,female,5,no,southwest,4830.63,Obesity Class II
+32,female,3,no,northwest,6128.79745,Obesity Class I
+19,female,1,no,northwest,2719.27975,Obesity Class I
+27,male,3,no,northeast,4827.90495,Normal Weight
+63,male,0,no,southeast,13405.3903,Obesity Class III
+49,male,0,no,southwest,8116.68,Obesity Class I
+18,male,0,no,northeast,1694.7964,Underweight
+35,female,1,no,southwest,5246.047,Obesity Class I
+24,female,0,no,northwest,2855.43755,Obesity Class I
+63,female,0,yes,southwest,48824.45,Obesity Class II
+38,male,2,no,northwest,6455.86265,Overweight
+54,male,1,no,southwest,10436.096,Overweight
+46,female,2,no,southwest,8823.279,Overweight
+41,female,3,no,northeast,8538.28845,Obesity Class I
+58,male,0,no,northwest,11735.87905,Overweight
+18,female,0,no,southeast,1631.8212,Obesity Class II
+22,male,3,no,northeast,4005.4225,Normal Weight
+44,female,0,no,northwest,7419.4779,Overweight
+44,male,2,no,southeast,7731.4271,Obesity Class I
+36,male,3,yes,northeast,43753.33705,Obesity Class III
+26,female,2,no,southeast,3981.9768,
+30,female,3,no,southwest,5325.651,Obesity Class I
+41,female,1,no,southwest,6775.961,Obesity Class I
+29,female,2,no,northwest,4922.9159,Obesity Class I
+61,male,0,no,southeast,12557.6053,Obesity Class I
+36,female,0,no,southwest,4883.866,Overweight
+25,male,0,no,southeast,2137.6536,Overweight
+56,female,1,no,northwest,12044.342,Overweight
+18,male,0,no,southeast,1137.4697,Obesity Class I
+19,male,0,no,northwest,1639.5631,Obesity Class I
+39,female,0,no,southwest,5649.715,Obesity Class I
+45,female,2,no,southeast,8516.829,Overweight
+51,female,0,no,northwest,9644.2525,Underweight
+64,female,0,no,northeast,14901.5167,Obesity Class II
+19,female,0,no,northwest,2130.6759,Obesity Class I
+48,female,1,no,southeast,8871.1517,Obesity Class I
+60,female,0,no,northwest,13012.20865,Normal Weight
+27,female,0,yes,southeast,37133.8982,Obesity Class II
+46,male,0,no,southwest,7147.105,Normal Weight
+28,female,1,no,northeast,4337.7352,Overweight
+59,male,0,no,southeast,11743.299,Overweight
+35,male,2,yes,northeast,20984.0936,Overweight
+63,female,0,no,southwest,13880.949,Obesity Class I
+40,male,1,no,northeast,6610.1097,Obesity Class III
+20,male,1,no,southwest,1980.07,Obesity Class I
+40,male,4,no,northwest,8162.71625,Obesity Class I
+24,male,2,no,northwest,3537.703,Overweight
+34,female,1,no,southeast,5002.7827,Overweight
+45,female,2,no,southwest,8520.026,Obesity Class I
+41,female,2,no,southwest,7371.772,Obesity Class II
+53,female,0,no,northwest,10355.641,Overweight
+27,male,0,no,southeast,2483.736,Normal Weight
+26,female,1,no,southeast,3392.9768,
+24,female,0,no,southeast,25081.76784,Normal Weight
+34,female,1,no,southwest,5012.471,Obesity Class I
+53,female,0,no,northeast,10564.8845,Obesity Class I
+32,male,3,no,southwest,5253.524,Obesity Class I
+19,male,0,yes,southwest,34779.615,Obesity Class I
+42,male,0,yes,southeast,19515.5416,Normal Weight
+55,male,3,no,southeast,11987.1682,Obesity Class I
+28,male,0,no,southeast,2689.4954,Obesity Class II
+58,female,0,no,southeast,24227.33724,Obesity Class III
+41,female,1,no,northeast,7358.17565,Obesity Class I
+47,male,2,no,northeast,9225.2564,Overweight
+42,female,1,no,northwest,7443.64305,Obesity Class II
+59,female,3,no,southeast,14001.2867,Overweight
+19,female,0,no,southwest,1727.785,Underweight
+59,male,1,no,southwest,12333.828,Overweight
+39,male,2,no,northwest,6710.1919,Normal Weight
+40,female,2,yes,southeast,19444.2658,Normal Weight
+18,female,0,no,southeast,1615.7667,Overweight
+31,male,2,no,southeast,4463.2051,Obesity Class II
+19,male,0,yes,northwest,17352.6803,Overweight
+44,male,1,no,southeast,7152.6714,Obesity Class II
+23,female,2,yes,northeast,38511.6283,Obesity Class II
+33,female,1,no,northeast,5354.07465,Normal Weight
+55,female,1,no,southwest,35160.13457,Overweight
+40,male,3,no,southwest,7196.867,Obesity Class II
+63,female,0,yes,northeast,29523.1656,Overweight
+54,male,0,no,northwest,24476.47851,Obesity Class I
+60,female,0,no,southeast,12648.7034,Obesity Class II
+24,male,0,no,southeast,1986.9334,Obesity Class II
+19,male,1,no,southwest,1832.094,Normal Weight
+29,male,1,no,northeast,4040.55825,Overweight
+18,male,2,yes,northeast,12829.4551,Underweight
+63,female,2,yes,southwest,47305.305,Obesity Class I
+54,male,2,yes,southeast,44260.7499,Obesity Class I
+27,male,3,no,southwest,4260.744,Obesity Class I
+50,male,0,yes,northeast,41097.16175,Obesity Class I
+55,female,3,no,northeast,13047.33235,Overweight
+56,male,0,yes,northwest,43921.1837,Obesity Class I
+38,female,0,no,southeast,5400.9805,Obesity Class III
+51,male,4,no,northwest,11520.09985,Normal Weight
+19,male,0,yes,northwest,33750.2918,Obesity Class I
+58,female,0,no,southwest,11837.16,Overweight
+20,female,1,yes,southeast,17085.2676,Overweight
+52,male,3,yes,northeast,24869.8368,Normal Weight
+19,male,0,yes,northwest,36219.40545,Obesity Class II
+53,female,3,no,southeast,20462.99766,Obesity Class II
+46,male,3,yes,southeast,46151.1245,Obesity Class III
+40,male,1,yes,southeast,17179.522,Normal Weight
+59,female,3,no,northeast,14590.63205,Obesity Class I
+45,male,1,no,southwest,7441.053,Obesity Class I
+49,male,1,no,northeast,9282.4806,Overweight
+18,male,1,no,southeast,1719.4363,Overweight
+50,male,2,yes,southwest,42856.838,Obesity Class I
+41,male,2,no,northwest,7265.7025,Obesity Class II
+50,male,1,no,northeast,9617.66245,Overweight
+25,male,0,no,northwest,2523.1695,Overweight
+47,female,2,no,northeast,9715.841,Overweight
+19,male,2,no,northwest,2803.69785,Normal Weight
+22,female,0,no,southwest,2150.469,Normal Weight
+59,male,2,no,southeast,12928.7911,Obesity Class I
+51,female,1,no,southeast,9855.1314,Normal Weight
+40,female,1,yes,northeast,22331.5668,Overweight
+54,male,3,yes,northeast,48549.17835,Obesity Class III
+30,male,1,no,northeast,4237.12655,Overweight
+55,female,1,no,northeast,11879.10405,Obesity Class I
+52,female,0,no,southwest,9625.92,Obesity Class I
+46,male,1,no,southeast,7742.1098,Overweight
+46,female,2,no,northeast,9432.9253,Obesity Class III
+63,female,0,no,northwest,14256.1928,Overweight
+59,female,1,yes,northeast,47896.79135,Obesity Class II
+52,male,3,no,southeast,25992.82104,Overweight
+28,female,0,no,southwest,3172.018,Obesity Class I
+29,male,1,no,northeast,20277.80751,Overweight
+25,male,2,yes,southeast,42112.2356,Obesity Class III
+22,female,0,no,southeast,2156.7518,Overweight
+25,male,3,no,southwest,3906.127,Overweight
+18,male,0,no,northeast,1704.5681,Normal Weight
+19,male,0,yes,southwest,16297.846,Overweight
+47,male,1,yes,southeast,21978.6769,Overweight
+31,male,3,yes,northwest,38746.3551,Obesity Class I
+48,female,1,no,northwest,9249.4952,Overweight
+36,male,3,no,northeast,6746.7425,Overweight
+53,female,3,yes,northeast,24873.3849,Normal Weight
+56,female,2,no,southeast,12265.5069,Obesity Class II
+28,female,2,no,southeast,4349.462,Obesity Class I
+57,female,2,no,southwest,12646.207,Obesity Class II
+29,male,2,no,northwest,19442.3535,Obesity Class I
+28,female,2,no,southwest,20177.67113,Overweight
+30,female,1,no,southeast,4151.0287,Obesity Class I
+58,male,0,no,northeast,11944.59435,Obesity Class I
+41,female,2,no,northwest,7749.1564,Obesity Class I
+50,male,0,no,southwest,8444.474,Overweight
+19,female,0,no,southwest,1737.376,Normal Weight
+43,male,3,yes,southeast,42124.5153,Obesity Class II
+49,male,0,no,southeast,8124.4084,Obesity Class II
+27,female,0,yes,southwest,34838.873,Obesity Class I
+52,male,0,no,northeast,9722.7695,Obesity Class I
+50,male,0,no,northwest,8835.26495,Obesity Class I
+54,male,0,no,northeast,10435.06525,Obesity Class I
+44,female,0,no,northwest,7421.19455,Overweight
+32,male,1,no,northeast,4667.60765,Obesity Class II
+34,male,1,no,northwest,4894.7533,Overweight
+26,female,4,no,northeast,24671.66334,Overweight
+34,male,0,yes,southwest,35491.64,Obesity Class I
+57,male,0,no,northeast,11566.30055,Obesity Class III
+29,male,0,no,southwest,2866.091,Overweight
+40,male,1,no,northeast,6600.20595,Obesity Class I
+27,female,1,no,southeast,3561.8889,Normal Weight
+45,male,2,yes,northwest,42760.5022,Obesity Class II
+64,female,1,yes,southwest,47928.03,Obesity Class I
+52,male,0,no,southwest,9144.565,Obesity Class II
+61,female,1,yes,northeast,48517.56315,Obesity Class II
+52,male,0,yes,northwest,24393.6224,Overweight
+61,female,0,no,northwest,13429.0354,Obesity Class I
+56,female,0,no,northeast,11658.37915,Overweight
+43,female,2,no,northeast,19144.57652,Obesity Class II
+64,male,0,no,southwest,13822.803,Obesity Class I
+60,male,0,no,southeast,12142.5786,Overweight
+62,male,1,no,northwest,13937.6665,Overweight
+50,male,1,yes,northeast,41919.097,Obesity Class I
+46,female,1,no,southeast,8232.6388,Overweight
+24,female,0,no,southwest,18955.22017,Overweight
+62,male,0,no,northwest,13352.0998,Obesity Class I
+60,female,0,no,northeast,13217.0945,Overweight
+63,male,0,no,northeast,13981.85035,Obesity Class II
+49,female,4,no,southeast,10977.2063,Obesity Class III
+34,female,3,no,southeast,6184.2994,Overweight
+33,male,2,no,southeast,4889.9995,Obesity Class II
+46,male,1,no,northeast,8334.45755,Obesity Class I
+36,female,1,no,southeast,5478.0368,
+19,male,0,no,northwest,1635.73365,Overweight
+57,female,0,no,northwest,11830.6072,Normal Weight
+50,female,0,no,southwest,8932.084,Overweight
+30,female,0,no,southwest,3554.203,Overweight
+33,male,0,no,northeast,12404.8791,Obesity Class II
+18,female,0,no,southeast,14133.03775,Obesity Class II
+46,male,0,no,southwest,24603.04837,Overweight
+46,male,3,no,southeast,8944.1151,Obesity Class III
+47,male,3,no,northwest,9620.3307,Overweight
+23,male,0,no,southeast,1837.2819,Obesity Class III
+18,female,0,no,southeast,1607.5101,Normal Weight
+48,female,2,no,northeast,10043.249,Obesity Class I
+35,male,1,no,southwest,4751.07,Obesity Class I
+19,female,0,yes,southwest,13844.506,Normal Weight
+21,female,1,no,southwest,2597.779,Overweight
+21,female,2,no,southeast,3180.5101,Normal Weight
+49,female,1,no,northeast,9778.3472,Obesity Class I
+56,female,3,no,northeast,13430.265,Obesity Class I
+42,female,2,no,northwest,8017.06115,
+44,male,2,no,northwest,8116.26885,Obesity Class I
+18,male,3,no,northeast,3481.868,Obesity Class I
+61,female,0,no,northwest,13415.0381,Normal Weight
+57,female,0,no,northeast,12029.2867,Normal Weight
+42,female,1,no,northeast,7639.41745,Obesity Class I
+26,male,2,yes,southwest,36085.219,Obesity Class I
+20,male,0,no,southeast,1391.5287,Obesity Class I
+23,female,0,yes,northwest,18033.9679,Overweight
+39,female,3,yes,northeast,21659.9301,Normal Weight
+24,male,0,yes,southeast,38126.2465,Obesity Class III
+64,female,3,no,northwest,16455.70785,Obesity Class I
+62,male,1,no,southeast,27000.98473,Obesity Class I
+27,female,2,yes,northeast,15006.57945,Underweight
+55,male,0,yes,northeast,42303.69215,Obesity Class I
+55,male,0,no,southeast,20781.48892,Obesity Class I
+35,female,2,no,southeast,5846.9176,Obesity Class III
+44,male,2,no,northeast,8302.53565,Normal Weight
+19,male,0,no,southwest,1261.859,Obesity Class I
+58,female,0,no,southeast,11856.4115,Obesity Class II
+50,male,2,no,northwest,30284.64294,Overweight
+26,female,0,no,northwest,3176.8159,Normal Weight
+24,female,3,no,northwest,4618.0799,Obesity Class I
+48,male,4,no,northeast,10736.87075,Obesity Class II
+19,female,0,no,northwest,2138.0707,Obesity Class II
+48,male,1,no,northeast,8964.06055,Obesity Class I
+49,male,1,no,northeast,9290.1395,Obesity Class I
+46,female,2,no,northeast,9411.005,Obesity Class I
+46,male,0,no,northwest,7526.70645,Normal Weight
+43,female,3,no,southwest,8522.003,Obesity Class I
+21,male,0,no,southeast,16586.49771,Obesity Class I
+64,male,2,no,southwest,14988.432,Overweight
+18,female,0,no,southeast,1631.6683,Obesity Class II
+51,female,0,no,southwest,9264.797,Normal Weight
+47,male,1,no,southeast,8083.9198,Obesity Class III
+64,female,0,no,northwest,14692.66935,Obesity Class I
+49,male,3,no,northwest,10269.46,Obesity Class I
+31,male,0,no,southwest,3260.199,Normal Weight
+52,female,2,no,northeast,11396.9002,Obesity Class II
+33,female,0,no,southeast,4185.0979,Normal Weight
+47,female,1,no,southwest,8539.671,Normal Weight
+38,male,3,no,southeast,6652.5288,Normal Weight
+32,male,1,no,southeast,4074.4537,Obesity Class I
+19,male,0,no,northwest,1621.3402,Underweight
+44,female,1,yes,northeast,19594.80965,Normal Weight
+26,female,2,yes,northeast,14455.64405,Underweight
+25,male,5,no,southwest,5080.096,Normal Weight
+19,female,0,no,northwest,2134.9015,Obesity Class II
+43,female,1,no,southeast,7345.7266,Obesity Class II
+52,male,0,no,southeast,9140.951,Obesity Class I
+36,female,2,yes,southwest,18608.262,Normal Weight
+64,male,1,no,southeast,14418.2804,Obesity Class II
+63,female,0,yes,northwest,28950.4692,Overweight
+64,male,0,yes,southeast,46889.2612,Obesity Class I
+61,male,0,yes,southeast,46599.1084,Obesity Class II
+40,male,1,yes,northeast,39125.33225,Obesity Class I
+25,male,0,no,northeast,2727.3951,Obesity Class I
+48,male,2,no,southwest,8968.33,Obesity Class I
+45,male,5,no,southeast,9788.8659,Normal Weight
+38,female,1,no,northeast,6555.07035,Overweight
+18,female,0,no,northeast,7323.734819,Overweight
+21,female,1,no,northeast,3167.45585,Underweight
+27,female,3,no,northwest,18804.7524,Obesity Class I
+19,male,0,no,southwest,23082.95533,Obesity Class I
+29,female,2,no,northwest,4906.40965,Normal Weight
+42,male,0,no,southwest,5969.723,Overweight
+60,female,0,no,southwest,12638.195,Obesity Class I
+31,male,1,no,northwest,4243.59005,Overweight
+60,male,3,no,southeast,13919.8229,Obesity Class I
+22,male,0,no,northeast,2254.7967,Obesity Class I
+35,male,3,no,southwest,5926.846,Overweight
+52,female,5,no,southeast,12592.5345,Obesity Class III
+26,male,0,no,northeast,2897.3235,Overweight
+31,female,1,no,northwest,4738.2682,Obesity Class I
+33,female,0,yes,southwest,37079.372,Obesity Class I
+18,male,0,no,southeast,1149.3959,Obesity Class III
+59,female,1,no,southeast,28287.89766,Obesity Class II
+56,male,1,yes,northwest,26109.32905,Overweight
+45,female,0,no,southwest,7345.084,Obesity Class I
+60,male,0,no,northeast,12730.9996,Overweight
+56,female,0,no,northwest,11454.0215,Overweight
+40,female,0,no,southwest,5910.944,Overweight
+35,male,1,no,southwest,4762.329,Obesity Class II
+39,male,4,no,southwest,7512.267,Overweight
+30,male,1,no,northwest,4032.2407,Normal Weight
+24,male,0,no,southwest,1969.614,Normal Weight
+20,male,0,no,northwest,1769.53165,Overweight
+32,male,2,no,southeast,4686.3887,Obesity Class III
+59,male,0,no,southwest,21797.0004,Obesity Class II
+55,female,2,no,southeast,11881.9696,Obesity Class I
+57,female,0,no,northwest,11840.77505,Obesity Class I
+56,male,0,no,southwest,10601.412,Obesity Class II
+40,female,3,no,southeast,7682.67,Obesity Class I
+49,female,3,no,southeast,10381.4787,Obesity Class II
+42,male,0,yes,southwest,22144.032,Obesity Class I
+62,female,2,no,northeast,15230.32405,Obesity Class II
+56,male,0,no,northeast,11165.41765,Overweight
+19,male,0,no,northwest,1632.03625,Overweight
+30,female,1,yes,southeast,19521.9682,Overweight
+60,female,1,no,southwest,13224.693,Overweight
+56,female,2,no,northwest,12643.3778,Obesity Class I
+28,female,1,no,northeast,23288.9284,Normal Weight
+18,female,1,no,southeast,2201.0971,Normal Weight
+27,male,0,no,southeast,2497.0383,Obesity Class I
+18,female,0,no,northeast,2203.47185,Obesity Class I
+19,female,0,no,southwest,1744.465,Overweight
+47,female,0,no,northeast,20878.78443,Obesity Class I
+54,male,3,yes,southwest,25382.297,Overweight
+61,male,1,yes,northwest,28868.6639,Overweight
+24,male,0,yes,northeast,35147.52848,Overweight
+25,male,0,no,northwest,2534.39375,Obesity Class II
+21,male,0,no,southeast,1534.3045,Obesity Class II
+23,male,0,no,southeast,1824.2854,Obesity Class I
+63,male,3,no,northwest,15555.18875,Obesity Class III
+49,male,2,no,southeast,9304.7019,Obesity Class II
+18,female,0,no,southeast,1622.1885,Obesity Class I
+51,female,1,no,southwest,9880.068,Obesity Class II
+48,male,3,no,southwest,9563.029,Obesity Class I
+31,female,0,no,northeast,4347.02335,Obesity Class I
+54,female,3,no,northwest,12475.3513,Normal Weight
+19,male,0,no,southwest,1253.936,Overweight
+44,female,0,yes,southeast,48885.13561,Obesity Class II
+53,male,1,no,northwest,10461.9794,Obesity Class I
+19,female,0,no,southwest,1748.774,Obesity Class I
+61,female,0,no,southeast,24513.09126,Overweight
+18,female,0,no,northeast,2196.4732,Overweight
+61,male,0,no,southwest,12574.049,Obesity Class III
+21,male,4,yes,southwest,17942.106,Overweight
+20,male,0,no,northeast,1967.0227,Overweight
+31,female,2,no,southwest,4931.647,Normal Weight
+45,male,2,no,southwest,8027.968,Overweight
+44,female,2,no,southeast,8211.1002,Normal Weight
+62,female,0,no,southwest,13470.86,Obesity Class II
+29,male,0,yes,southwest,36197.699,Obesity Class I
+43,male,0,no,northeast,6837.3687,Overweight
+51,male,1,yes,southeast,22218.1149,Normal Weight
+19,male,0,yes,southeast,32548.3405,Obesity Class I
+38,female,1,no,southeast,5974.3847,Overweight
+37,male,3,no,northwest,6796.86325,Obesity Class I
+22,male,1,no,northwest,2643.2685,Obesity Class I
+21,male,2,no,northwest,3077.0955,Normal Weight
+24,female,0,no,northeast,3044.2133,Overweight
+57,female,0,no,southwest,11455.28,Overweight
+56,male,1,no,northeast,11763.0009,Obesity Class I
+27,male,0,no,southeast,2498.4144,Obesity Class I
+51,male,0,no,northeast,9361.3268,Normal Weight
+19,male,0,no,southwest,1256.299,Obesity Class I
+39,male,1,yes,southwest,21082.16,Overweight
+58,male,0,no,southwest,11362.755,Obesity Class II
+20,male,1,no,southeast,27724.28875,Obesity Class II
+45,male,2,no,northwest,8413.46305,Obesity Class I
+35,female,1,no,southwest,5240.765,Obesity Class I
+31,male,0,no,northeast,3857.75925,Obesity Class I
+50,female,0,no,northeast,25656.57526,Overweight
+32,female,0,no,southeast,3994.1778,Obesity Class III
+51,female,0,no,northeast,9866.30485,Obesity Class I
+38,female,0,no,southeast,5397.6167,Obesity Class II
+42,male,1,yes,southeast,38245.59327,Overweight
+18,female,0,no,southeast,11482.63485,Obesity Class I
+19,female,2,no,northwest,24059.68019,Obesity Class I
+51,female,1,no,southwest,9861.025,Overweight
+46,male,1,no,northeast,8342.90875,Obesity Class II
+18,male,0,no,northeast,1708.0014,Overweight
+57,male,1,yes,southeast,48675.5177,Obesity Class III
+62,female,0,no,northeast,14043.4767,Obesity Class I
+59,male,2,no,southeast,12925.886,Overweight
+37,male,0,no,southeast,19214.70553,Obesity Class II
+64,male,0,no,southeast,13831.1152,Obesity Class III
+38,male,1,no,northeast,6067.12675,Overweight
+33,female,3,no,southwest,5972.378,Obesity Class II
+46,female,2,no,southwest,8825.086,Obesity Class I
+46,female,1,no,southeast,8233.0975,Overweight
+53,male,0,no,southeast,27346.04207,Obesity Class I
+34,female,3,no,southwest,6196.448,Obesity Class II
+20,female,2,no,southeast,3056.3881,Obesity Class I
+63,female,0,no,southeast,13887.204,Obesity Class II
+54,female,0,yes,southeast,63770.42801,Obesity Class III
+54,male,0,no,northwest,10231.4999,Obesity Class I
+49,male,2,yes,northwest,23807.2406,Overweight
+28,male,0,no,northeast,3268.84665,Obesity Class II
+54,female,2,no,southwest,11538.421,Obesity Class III
+25,female,0,no,northeast,3213.62205,Overweight
+43,female,0,yes,southeast,45863.205,Obesity Class III
+63,male,0,no,southwest,13390.559,Obesity Class I
+32,female,0,no,southeast,3972.9247,Overweight
+62,male,0,no,southwest,12957.118,Normal Weight
+52,female,2,no,northwest,11187.6567,Obesity Class I
+25,female,0,no,northeast,17878.90068,Obesity Class III
+28,male,2,no,southwest,3847.674,Normal Weight
+46,male,1,no,northeast,8334.5896,Obesity Class I
+34,male,0,no,southeast,3935.1799,Obesity Class I
+35,female,3,yes,northwest,39983.42595,Obesity Class I
+19,male,0,no,northwest,1646.4297,Obesity Class II
+46,female,2,no,northwest,9193.8385,Normal Weight
+54,female,0,no,northeast,10923.9332,Obesity Class I
+27,male,0,no,southwest,2494.022,Obesity Class I
+50,male,1,no,southeast,9058.7303,Obesity Class III
+18,female,2,no,southeast,2801.2588,Obesity Class I
+19,female,0,no,northwest,2128.43105,Obesity Class I
+38,female,1,no,northwest,6373.55735,Obesity Class III
+41,male,2,no,northwest,7256.7231,Obesity Class I
+49,female,5,no,southwest,11552.904,Obesity Class I
+48,male,2,yes,northwest,45702.02235,Obesity Class III
+31,female,0,no,southwest,3761.292,Overweight
+18,female,1,no,southeast,2219.4451,Obesity Class II
+30,female,2,no,southeast,4753.6368,Obesity Class III
+62,female,1,no,northeast,31620.00106,Obesity Class II
+57,female,2,no,northeast,13224.05705,Obesity Class I
+58,female,0,no,northwest,12222.8983,Overweight
+22,male,0,no,southeast,1664.9996,Overweight
+31,female,1,yes,northeast,58571.07448,Obesity Class II
+52,male,1,no,southwest,9724.53,Obesity Class I
+25,female,0,no,northeast,3206.49135,Normal Weight
+59,male,1,no,northeast,12913.9924,Overweight
+39,male,2,no,southeast,6356.2707,Obesity Class III
+32,female,1,no,southeast,17626.23951,Normal Weight
+19,male,0,no,southwest,1242.816,Normal Weight
+33,female,1,no,southeast,4779.6023,Overweight
+21,male,3,no,northeast,3861.20965,Normal Weight
+34,female,1,yes,northwest,43943.8761,Obesity Class I
+61,female,0,no,northeast,13635.6379,Obesity Class II
+38,female,1,no,southeast,5976.8311,Obesity Class I
+58,female,0,no,southwest,11842.442,Overweight
+47,male,1,no,northwest,8428.0693,Normal Weight
+20,male,2,no,southeast,2566.4707,Obesity Class I
+21,female,1,yes,northeast,15359.1045,Normal Weight
+41,male,0,no,southeast,5709.1644,Obesity Class III
+46,female,1,no,northeast,8823.98575,Obesity Class I
+42,female,2,no,southeast,7640.3092,Overweight
+34,female,1,no,northeast,5594.8455,Obesity Class I
+43,male,2,no,southwest,7441.501,Obesity Class I
+52,female,2,no,northwest,33471.97189,Obesity Class II
+18,female,0,no,southeast,1633.0444,Obesity Class II
+51,male,0,no,northwest,9174.13565,Obesity Class I
+56,female,0,no,southwest,11070.535,Overweight
+64,female,3,no,southeast,16085.1275,Obesity Class II
+19,female,0,yes,northwest,17468.9839,Overweight
+51,female,0,no,southeast,9283.562,Obesity Class I
+27,female,0,no,northeast,3558.62025,Overweight
+59,female,0,yes,northwest,25678.77845,Normal Weight
+28,male,2,no,northeast,4435.0942,Overweight
+30,male,2,yes,southwest,39241.442,Obesity Class II
+47,female,1,no,southeast,8547.6913,Overweight
+38,female,2,no,southwest,6571.544,Obesity Class I
+18,female,0,no,northeast,2207.69745,Obesity Class I
+34,female,3,no,northeast,6753.038,Normal Weight
+20,female,0,no,southeast,1880.07,Obesity Class I
+47,female,1,yes,southeast,42969.8527,Obesity Class II
+56,female,0,no,northeast,11658.11505,Overweight
+49,male,2,yes,southwest,23306.547,Overweight
+19,female,0,yes,southeast,34439.8559,Obesity Class I
+55,female,0,no,southwest,10713.644,Obesity Class II
+30,male,1,no,southwest,3659.346,Obesity Class I
+37,male,4,yes,southwest,40182.246,Obesity Class I
+49,female,1,no,southwest,9182.17,Normal Weight
+18,male,0,yes,northeast,34617.84065,Obesity Class I
+59,male,0,no,northwest,12129.61415,Overweight
+29,female,0,no,northwest,3736.4647,Overweight
+36,male,3,no,northeast,6748.5912,Overweight
+33,male,1,no,southeast,11326.71487,Obesity Class III
+58,male,0,no,southwest,11365.952,Obesity Class II
+44,female,0,yes,northwest,42983.4585,Obesity Class II
+53,male,1,no,southwest,10085.846,Obesity Class II
+24,male,0,no,southwest,1977.815,Overweight
+29,female,0,no,southeast,3366.6697,Obesity Class II
+40,male,2,no,northeast,7173.35995,Normal Weight
+51,male,1,no,southwest,9391.346,Obesity Class II
+64,male,0,no,northeast,14410.9321,Obesity Class II
+19,female,1,no,northwest,2709.1119,Normal Weight
+35,female,2,no,northeast,24915.04626,Obesity Class II
+39,male,0,yes,northeast,20149.3229,Overweight
+56,male,4,no,southeast,12949.1554,Obesity Class I
+33,male,5,no,southwest,6666.243,Obesity Class III
+42,male,3,yes,northwest,32787.45859,Overweight
+61,male,0,no,northeast,13143.86485,Obesity Class I
+23,female,3,no,northwest,4466.6214,
+43,male,2,no,southeast,18806.14547,Obesity Class II
+48,male,3,no,northeast,10141.1362,Obesity Class I
+39,male,1,no,northwest,6123.5688,Overweight
+40,female,3,no,northeast,8252.2843,Normal Weight
+18,male,0,no,northeast,1712.227,Overweight
+58,female,0,no,northeast,12430.95335,Obesity Class I
+49,female,2,no,southeast,9800.8882,Obesity Class III
+53,female,1,no,southeast,10579.711,Obesity Class II
+48,female,0,no,southeast,8280.6227,Obesity Class I
+45,female,2,no,southeast,8527.532,Obesity Class II
+59,female,0,no,southeast,12244.531,Obesity Class II
+52,female,2,yes,southeast,24667.419,Overweight
+26,female,1,no,southwest,3410.324,Obesity Class III
+27,male,2,no,northwest,4058.71245,Obesity Class I
+48,female,1,no,northeast,26392.26029,Obesity Class II
+57,female,4,no,northeast,14394.39815,Overweight
+37,male,3,no,southeast,6435.6237,Obesity Class III
+57,female,1,no,southeast,22192.43711,Normal Weight
+32,female,1,no,northeast,5148.5526,Obesity Class I
+18,male,0,no,southeast,1136.3994,Obesity Class I
+64,female,0,yes,southeast,27037.9141,Normal Weight
+43,male,2,yes,southeast,42560.4304,Obesity Class II
+49,male,1,no,southwest,8703.456,Overweight
+40,female,2,yes,northwest,40003.33225,Obesity Class I
+62,male,0,yes,northeast,45710.20785,Obesity Class I
+40,female,1,no,southeast,6500.2359,Overweight
+30,male,3,no,southeast,4837.5823,Obesity Class I
+29,female,0,no,northeast,3943.5954,Obesity Class I
+36,male,0,no,southeast,4399.731,Overweight
+41,female,0,no,southeast,6185.3208,Obesity Class I
+44,female,2,yes,southeast,46200.9851,Obesity Class III
+45,male,0,no,northwest,7222.78625,Normal Weight
+55,female,3,no,southeast,12485.8009,Obesity Class III
+60,male,3,yes,northwest,46130.5265,Obesity Class I
+56,male,3,no,southwest,12363.547,Obesity Class II
+49,female,2,no,northwest,10156.7832,Normal Weight
+21,female,1,no,southwest,2585.269,Underweight
+19,male,0,no,southwest,1242.26,Normal Weight
+39,male,2,yes,southwest,40103.89,Obesity Class II
+53,male,0,no,northwest,9863.4718,Normal Weight
+33,female,1,no,southwest,4766.022,Underweight
+53,male,2,no,northeast,11244.3769,Overweight
+42,male,2,no,northeast,7729.64575,Overweight
+40,male,0,no,southeast,5438.7491,Obesity Class III
+47,female,1,no,southwest,26236.57997,Normal Weight
+27,male,1,yes,southeast,34806.4677,Obesity Class I
+21,male,0,no,northeast,2104.1134,Overweight
+47,male,1,no,southwest,8068.185,Obesity Class II
+20,male,1,no,northwest,2362.22905,Obesity Class I
+24,male,0,no,northwest,2352.96845,Normal Weight
+27,female,1,no,southwest,3577.999,Obesity Class I
+26,female,0,no,northwest,3201.24515,Obesity Class III
+53,female,2,no,northeast,29186.48236,Obesity Class I
+41,male,1,yes,southeast,40273.6455,Obesity Class II
+56,male,0,no,northwest,10976.24575,Obesity Class I
+23,female,2,no,southeast,3500.6123,Obesity Class II
+21,female,0,no,southeast,2020.5523,Obesity Class I
+50,female,0,no,northeast,9541.69555,Obesity Class III
+53,male,0,no,southeast,9504.3103,Obesity Class III
+34,female,1,no,northwest,5385.3379,Overweight
+47,female,1,no,northwest,8930.93455,Overweight
+33,female,2,no,southwest,5375.038,Obesity Class I
+51,female,0,yes,southeast,44400.4064,Obesity Class II
+49,male,3,no,northwest,10264.4421,Overweight
+31,female,3,no,northeast,6113.23105,Obesity Class I
+36,female,0,no,northeast,5469.0066,Overweight
+18,male,1,no,southeast,1727.54,Obesity Class II
+50,female,2,no,southeast,10107.2206,Normal Weight
+43,female,2,no,northwest,8310.83915,Obesity Class I
+20,male,0,no,northeast,1984.4533,Obesity Class III
+24,female,0,no,southwest,2457.502,Normal Weight
+60,male,0,no,southwest,12146.971,Overweight
+49,female,1,no,northwest,9566.9909,Normal Weight
+60,male,1,no,northwest,13112.6048,Normal Weight
+51,female,2,no,northwest,10848.1343,Obesity Class II
+58,female,0,no,northwest,12231.6136,Obesity Class I
+51,female,0,no,northeast,9875.6804,Obesity Class III
+53,male,3,no,southwest,11264.541,Obesity Class II
+62,male,0,no,southwest,12979.358,Obesity Class II
+19,male,0,no,southwest,1263.249,Obesity Class II
+50,female,1,no,northeast,10106.13425,Overweight
+30,female,3,yes,southeast,40932.4295,Obesity Class II
+41,male,1,no,northwest,6664.68595,Overweight
+29,female,1,yes,northeast,16657.71745,Normal Weight
+18,female,0,no,northeast,2217.6012,Obesity Class III
+41,female,1,no,southeast,6781.3542,Obesity Class II
+35,male,3,yes,southeast,19361.9988,Normal Weight
+53,male,1,no,southwest,10065.413,Normal Weight
+24,female,3,no,southwest,4234.927,Obesity Class I
+48,female,1,no,northeast,9447.25035,Overweight
+59,female,3,no,southwest,14007.222,Obesity Class I
+49,female,1,no,northwest,9583.8933,Obesity Class I
+37,female,0,yes,southeast,40419.0191,Obesity Class II
+26,male,2,no,southwest,3484.331,Normal Weight
+23,male,3,yes,northeast,36189.1017,Obesity Class I
+29,male,2,yes,southwest,44585.45587,Obesity Class II
+45,male,2,no,northeast,8604.48365,Normal Weight
+27,male,0,yes,southeast,18246.4955,Overweight
+53,male,0,yes,northeast,43254.41795,Obesity Class I
+31,female,0,no,southeast,3757.8448,Overweight
+50,male,0,no,northwest,8827.2099,Overweight
+50,female,1,no,northwest,9910.35985,Obesity Class I
+34,male,2,no,southwest,11737.84884,Overweight
+19,male,0,no,northwest,1627.28245,Normal Weight
+47,female,1,no,southwest,8556.907,Obesity Class II
+28,male,0,no,northwest,3062.50825,Obesity Class I
+37,female,0,yes,southeast,19539.243,Overweight
+21,male,0,no,northwest,1906.35825,Overweight
+64,male,0,no,northwest,14210.53595,Obesity Class II
+58,female,0,no,southeast,11833.7823,Normal Weight
+24,male,4,no,northeast,17128.42608,Obesity Class I
+31,male,2,no,northeast,5031.26955,Overweight
+39,female,3,no,northeast,7985.815,Normal Weight
+47,female,0,yes,southeast,23065.4207,Overweight
+30,male,3,no,northeast,5428.7277,Obesity Class II
+18,male,0,yes,southeast,36307.7983,Obesity Class II
+22,female,2,no,northeast,3925.7582,Obesity Class I
+23,male,1,no,southwest,2416.955,Obesity Class II
+33,male,1,yes,southwest,19040.876,Overweight
+27,male,0,no,northeast,3070.8087,Overweight
+45,female,2,no,northeast,9095.06825,Overweight
+57,female,0,no,northwest,11842.62375,Obesity Class I
+47,male,1,no,southwest,8062.764,Obesity Class I
+42,female,1,no,southwest,7050.642,Overweight
+64,female,0,no,southwest,14319.031,Obesity Class II
+38,female,2,no,northwest,6933.24225,Normal Weight
+61,male,3,no,southwest,27941.28758,Obesity Class II
+53,female,2,no,southwest,11150.78,Overweight
+44,female,0,no,northeast,12797.20962,Obesity Class II
+19,female,0,yes,northwest,17748.5062,Overweight
+41,male,2,no,northwest,7261.741,Obesity Class I
+51,male,3,no,southeast,10560.4917,Obesity Class I
+40,male,2,no,northwest,6986.697,Obesity Class I
+45,male,0,no,northeast,7448.40395,Obesity Class II
+35,male,3,no,southeast,5934.3798,Obesity Class I
+53,male,0,no,northwest,9869.8102,Overweight
+30,male,3,yes,southwest,18259.216,Normal Weight
+18,male,0,no,southeast,1146.7966,Obesity Class III
+51,male,1,no,southeast,9386.1613,Obesity Class II
+50,female,1,yes,southwest,24520.264,Overweight
+31,female,1,no,southeast,4350.5144,Overweight
+35,female,3,no,southwest,6414.178,Overweight
+60,male,0,no,northeast,12741.16745,Obesity Class II
+21,male,0,no,northwest,1917.3184,Obesity Class II
+29,male,3,no,northeast,5209.57885,Normal Weight
+62,female,0,no,southeast,13457.9608,
+39,female,0,no,southeast,5662.225,Obesity Class III
+19,male,0,no,southwest,1252.407,Overweight
+22,female,0,no,northeast,2731.9122,Normal Weight
+53,male,0,yes,southeast,21195.818,Normal Weight
+39,female,2,no,northwest,7209.4918,Obesity Class I
+27,male,0,yes,northwest,18310.742,Overweight
+30,male,2,no,southeast,4266.1658,Obesity Class III
+30,female,1,no,northeast,4719.52405,Normal Weight
+58,female,0,no,southwest,11848.141,Obesity Class I
+33,male,0,yes,northeast,17904.52705,Normal Weight
+42,female,1,no,southeast,7046.7222,Overweight
+64,female,0,no,southeast,14313.8463,Obesity Class II
+21,male,1,no,southwest,2103.08,Normal Weight
+18,female,0,yes,southeast,38792.6856,Obesity Class III
+23,male,0,no,southeast,1815.8759,Overweight
+45,female,0,no,northwest,7731.85785,Obesity Class II
+40,female,1,no,northwest,28476.73499,Obesity Class III
+19,female,0,no,northwest,2136.88225,Obesity Class II
+18,male,0,no,southeast,1131.5066,Obesity Class I
+25,male,1,no,northeast,3309.7926,Overweight
+46,female,3,no,southwest,9414.92,Obesity Class I
+33,female,3,no,northwest,6360.9936,Obesity Class III
+54,male,2,no,southeast,11013.7119,Normal Weight
+28,male,2,no,northeast,4428.88785,Normal Weight
+36,male,2,no,southeast,5584.3057,Obesity Class I
+20,female,0,no,southeast,1877.9294,Obesity Class I
+24,female,0,no,northwest,2842.76075,Normal Weight
+23,male,3,no,southwest,3597.596,Obesity Class II
+47,female,1,yes,northeast,23401.30575,Overweight
+33,female,0,yes,northwest,55135.40209,Obesity Class II
+45,male,1,no,southwest,7445.918,Obesity Class I
+26,male,0,no,northwest,2680.9493,Underweight
+18,female,0,no,southeast,1621.8827,Obesity Class I
+44,female,2,no,southeast,8219.2039,Overweight
+60,male,0,no,northwest,12523.6048,Normal Weight
+64,female,2,no,northeast,16069.08475,Obesity Class I
+56,male,2,yes,southeast,43813.8661,Obesity Class I
+36,male,1,yes,northeast,20773.62775,Overweight
+41,male,3,yes,northeast,39597.4072,Obesity Class I
+39,male,1,no,northwest,6117.4945,Normal Weight
+63,male,0,no,southwest,13393.756,Obesity Class I
+36,female,0,no,northwest,5266.3656,Overweight
+28,female,2,no,northwest,4719.73655,Normal Weight
+58,male,0,no,northwest,11743.9341,Obesity Class I
+36,male,1,no,northwest,5377.4578,Obesity Class I
+42,male,2,no,southeast,7160.3303,Obesity Class II
+36,male,0,no,southwest,4402.233,Obesity Class I
+56,female,0,no,northeast,11657.7189,Overweight
+35,female,2,no,northeast,6402.29135,Normal Weight
+59,female,0,no,northwest,12622.1795,Obesity Class I
+21,male,0,no,southwest,1526.312,Obesity Class I
+59,male,0,no,northeast,12323.936,Normal Weight
+23,female,2,yes,southeast,36021.0112,Obesity Class I
+57,female,0,yes,southeast,27533.9129,Overweight
+53,male,0,no,northeast,10072.05505,Obesity Class I
+60,female,0,yes,southeast,45008.9555,Obesity Class I
+51,female,1,no,southwest,9872.701,Obesity Class I
+23,male,1,no,southeast,2438.0552,Obesity Class III
+27,female,0,no,southwest,2974.126,Normal Weight
+55,male,0,no,northwest,10601.63225,Obesity Class I
+37,female,0,yes,northeast,37270.1512,Obesity Class I
+61,male,2,no,northwest,14119.62,Obesity Class I
+46,female,0,yes,northeast,42111.6647,Obesity Class II
+53,female,2,no,northeast,11729.6795,Normal Weight
+49,female,3,yes,northeast,24106.91255,Normal Weight
+20,female,0,no,southwest,1875.344,Overweight
+48,female,0,yes,southeast,40974.1649,Obesity Class I
+25,male,0,yes,northwest,15817.9857,Normal Weight
+25,female,1,no,southeast,18218.16139,Obesity Class I
+57,male,0,no,southwest,10965.446,Overweight
+37,female,2,yes,southwest,46113.511,Obesity Class III
+38,female,3,no,southwest,7151.092,Overweight
+55,female,2,no,northwest,12269.68865,Obesity Class I
+36,female,0,no,northeast,5458.04645,Normal Weight
+51,male,0,no,southwest,8782.469,Overweight
+40,male,2,no,southwest,6600.361,Overweight
+18,male,0,no,southeast,1141.4451,Obesity Class II
+57,male,1,no,southwest,11576.13,Obesity Class III
+61,male,0,no,northeast,13129.60345,Normal Weight
+25,female,3,no,southwest,4391.652,Normal Weight
+50,male,0,no,southwest,8457.818,Obesity Class II
+26,female,1,no,southeast,3392.3652,Overweight
+42,male,0,no,southeast,5966.8874,Normal Weight
+43,male,1,no,southwest,6849.026,Obesity Class I
+44,male,3,no,northeast,8891.1395,Normal Weight
+23,female,0,no,northwest,2690.1138,Overweight
+49,female,1,no,southwest,26140.3603,Overweight
+33,male,5,no,southeast,6653.7886,Obesity Class I
+41,male,1,no,southwest,6282.235,Overweight
+37,female,2,no,southwest,6311.952,Overweight
+22,male,3,no,southwest,3443.064,Obesity Class I
+23,male,1,no,northwest,2789.0574,Overweight
+21,female,0,no,northeast,2585.85065,Normal Weight
+51,female,3,yes,northeast,46255.1125,Obesity Class II
+25,male,4,no,northwest,4877.98105,Overweight
+32,male,1,yes,southeast,19719.6947,Overweight
+57,male,0,yes,northeast,27218.43725,Overweight
+36,female,0,no,northwest,5272.1758,Obesity Class I
+22,male,0,no,southwest,1682.597,Obesity Class II
+57,male,1,no,northwest,11945.1327,Obesity Class I
+64,female,0,yes,northwest,29330.98315,Overweight
+36,female,4,no,southeast,7243.8136,Overweight
+54,male,0,no,northeast,10422.91665,Normal Weight
+47,male,2,yes,southeast,44202.6536,Obesity Class II
+62,male,0,no,northeast,13555.0049,Obesity Class I
+61,female,0,no,southwest,13063.883,Obesity Class III
+43,female,2,yes,northeast,19798.05455,Normal Weight
+19,male,1,no,northwest,2221.56445,Overweight
+18,female,0,no,southeast,1634.5734,Obesity Class III
+19,female,0,no,northwest,2117.33885,Normal Weight
+49,male,0,no,northeast,8688.85885,Normal Weight
+60,male,0,yes,southeast,48673.5588,Obesity Class III
+26,male,3,no,northeast,4661.28635,Overweight
+49,male,0,no,southeast,8125.7845,Obesity Class II
+60,female,0,no,southwest,12644.589,Obesity Class II
+26,female,2,no,northeast,4564.19145,Overweight
+27,male,3,no,northeast,4846.92015,Obesity Class I
+44,female,1,no,southeast,7633.7206,Obesity Class I
+63,male,3,no,southwest,15170.069,Obesity Class II
+32,female,0,yes,southwest,17496.306,Normal Weight
+22,male,1,no,northwest,2639.0429,Overweight
+18,male,0,yes,northeast,33732.6867,Obesity Class I
+59,female,3,no,northwest,14382.70905,Overweight
+44,female,1,no,southwest,7626.993,Overweight
+33,male,2,no,northwest,5257.50795,Normal Weight
+24,female,0,no,southeast,2473.3341,Obesity Class I
+43,female,0,yes,northwest,21774.32215,Overweight
+45,male,0,yes,northeast,35069.37452,Normal Weight
+61,female,0,no,southwest,13041.921,Overweight
+35,female,1,no,southeast,5245.2269,Obesity Class I
+62,female,0,no,southwest,13451.122,Overweight
+62,female,0,no,southwest,13462.52,Obesity Class I
+38,male,1,no,southwest,5488.262,Obesity Class I
+34,male,0,no,northwest,4320.41085,Obesity Class II
+43,male,0,no,southwest,6250.435,Normal Weight
+50,male,2,no,northeast,25333.33284,Obesity Class I
+19,female,2,no,southwest,2913.569,Normal Weight
+57,female,1,no,southwest,12032.326,Normal Weight
+62,female,0,no,southeast,13470.8044,Obesity Class II
+41,male,1,no,southeast,6289.7549,Obesity Class I
+26,male,1,no,southeast,2927.0647,Obesity Class III
+39,female,1,no,southwest,6238.298,Obesity Class I
+46,male,5,no,southwest,10096.97,Overweight
+45,female,0,no,southwest,7348.142,Obesity Class II
+32,male,2,no,southeast,4673.3922,Obesity Class II
+59,female,0,no,southwest,12233.828,Overweight
+44,male,2,no,northeast,32108.66282,Overweight
+39,female,5,no,northwest,8965.79575,Normal Weight
+18,male,2,no,southeast,2304.0022,Overweight
+53,male,0,no,southeast,9487.6442,Overweight
+18,male,0,no,southeast,1121.8739,Normal Weight
+50,female,1,no,southeast,9549.5651,Obesity Class III
+18,female,0,no,northeast,2217.46915,Obesity Class III
+19,male,0,no,northwest,1628.4709,Normal Weight
+62,male,0,no,southeast,12982.8747,
+56,female,1,no,southwest,11674.13,Obesity Class II
+42,male,2,no,southwest,7160.094,Obesity Class II
+37,male,1,yes,northeast,39047.285,Obesity Class I
+42,male,0,no,northwest,6358.77645,Obesity Class I
+25,male,3,yes,southwest,19933.458,Overweight
+57,male,0,no,northeast,11534.87265,Underweight
+51,male,2,yes,southeast,47462.894,Obesity Class III
+30,female,1,no,northwest,4527.18295,Overweight
+44,male,2,yes,southwest,38998.546,Obesity Class I
+34,male,1,yes,northwest,20009.63365,Overweight
+31,male,1,no,southeast,3875.7341,Obesity Class II
+54,male,1,yes,southeast,41999.52,Obesity Class I
+24,male,1,no,northwest,12609.88702,Overweight
+43,male,1,yes,northeast,41034.2214,
+48,male,1,no,northwest,28468.91901,Obesity Class II
+19,female,1,no,northwest,2730.10785,Obesity Class II
+29,female,0,no,southwest,3353.284,Overweight
+63,female,1,no,southeast,14474.675,Obesity Class II
+46,male,3,no,northeast,9500.57305,Normal Weight
+52,male,2,no,northwest,26467.09737,Obesity Class II
+35,male,1,no,southwest,4746.344,Overweight
+51,male,2,yes,northwest,23967.38305,Normal Weight
+44,male,1,no,northwest,7518.02535,Overweight
+21,male,2,no,northeast,3279.86855,Overweight
+39,female,5,no,southeast,8596.8278,Obesity Class I
+50,female,3,no,southeast,10702.6424,Overweight
+34,female,0,no,northeast,4992.3764,Normal Weight
+22,female,0,no,northwest,2527.81865,Normal Weight
+19,female,0,no,southwest,1759.338,Obesity Class III
+26,male,0,no,southeast,2322.6218,Obesity Class II
+29,male,0,yes,northeast,16138.76205,Normal Weight
+48,male,0,no,southeast,7804.1605,Obesity Class III
+26,male,1,no,southeast,2902.9065,Overweight
+45,female,3,no,northeast,9704.66805,
+36,female,0,no,southeast,4889.0368,
+54,male,1,no,northeast,25517.11363,Overweight
+34,male,0,no,northeast,4500.33925,Normal Weight
+31,male,3,yes,southwest,19199.944,Overweight
+27,female,1,no,northeast,16796.41194,Obesity Class I
+20,male,5,no,northeast,4915.05985,Obesity Class I
+44,female,1,no,southwest,7624.63,Overweight
+43,male,3,no,northwest,8410.04685,Obesity Class I
+45,female,1,no,northwest,28340.18885,Overweight
+34,male,0,no,northeast,4518.82625,Obesity Class I
+24,female,0,yes,northeast,14571.8908,Normal Weight
+26,female,1,no,southwest,3378.91,Normal Weight
+38,female,2,no,northeast,7144.86265,Overweight
+50,female,2,no,southwest,10118.424,Obesity Class I
+38,male,1,no,southeast,5484.4673,Overweight
+27,female,3,yes,northwest,16420.49455,Normal Weight
+39,female,3,no,northeast,7986.47525,Normal Weight
+39,female,3,no,southwest,7418.522,Obesity Class I
+63,female,0,no,southeast,13887.9685,Obesity Class II
+33,female,3,no,northeast,6551.7501,Obesity Class II
+36,female,0,no,northwest,5267.81815,Overweight
+30,male,2,yes,northwest,17361.7661,Normal Weight
+24,male,0,yes,southwest,34472.841,Obesity Class I
+24,male,0,no,southwest,1972.95,Overweight
+48,male,0,no,southwest,21232.18226,Overweight
+47,male,1,no,northeast,8627.5411,Normal Weight
+29,male,2,no,northwest,4433.3877,Obesity Class I
+28,male,2,no,northeast,4438.2634,Overweight
+47,male,3,yes,northwest,24915.22085,Overweight
+25,male,2,no,northeast,23241.47453,
+51,male,1,no,northeast,9957.7216,Overweight
+48,female,0,no,southwest,8269.044,Normal Weight
+43,male,2,yes,southeast,18767.7377,Normal Weight
+61,female,4,no,southeast,36580.28216,Obesity Class I
+48,male,1,no,northwest,8765.249,Obesity Class I
+38,female,0,no,southwest,5383.536,Overweight
+59,male,0,no,northwest,12124.9924,Overweight
+19,female,1,no,northwest,2709.24395,Normal Weight
+26,female,2,no,southwest,3987.926,Obesity Class I
+54,female,3,no,northwest,12495.29085,Obesity Class II
+21,female,2,no,northwest,26018.95052,Obesity Class I
+51,male,0,no,southwest,8798.593,Obesity Class II
+22,female,3,yes,southeast,35595.5898,Obesity Class I
+47,male,1,yes,southeast,42211.1382,Obesity Class II
+18,male,1,no,southeast,1711.0268,Normal Weight
+47,female,1,no,southeast,8569.8618,Obesity Class III
+21,female,0,no,southwest,2020.177,Obesity Class I
+19,male,1,yes,northwest,16450.8947,Overweight
+23,male,0,no,northwest,21595.38229,Normal Weight
+54,male,0,no,southwest,9850.432,Obesity Class I
+37,female,2,no,northeast,6877.9801,Underweight
+46,female,1,yes,northwest,21677.28345,Normal Weight
+55,female,0,yes,southeast,44423.803,Obesity Class II
+30,female,0,no,northeast,4137.5227,Overweight
+18,male,0,yes,northeast,13747.87235,Normal Weight
+61,male,0,no,northwest,12950.0712,Obesity Class II
+54,female,3,no,southwest,12094.478,Normal Weight
+22,male,2,yes,southeast,37484.4493,Obesity Class II
+45,female,1,yes,northwest,39725.51805,Obesity Class I
+22,male,0,no,northeast,2250.8352,Overweight
+19,male,2,no,northwest,22493.65964,Overweight
+35,female,0,yes,northwest,20234.85475,Overweight
+18,male,0,no,northeast,1704.70015,Normal Weight
+20,male,0,yes,northeast,33475.81715,Obesity Class I
+28,female,0,no,southwest,3161.454,Overweight
+55,male,1,no,northeast,11394.06555,Obesity Class II
+43,female,2,yes,northwest,21880.82,Normal Weight
+43,female,0,no,northeast,7325.0482,Overweight
+22,male,1,yes,southeast,44501.3982,Obesity Class III
+25,female,1,no,northwest,3594.17085,Normal Weight
+49,male,0,yes,southwest,39727.614,Obesity Class I
+44,female,1,no,northwest,8023.13545,Obesity Class II
+64,male,0,no,northeast,14394.5579,Overweight
+49,male,1,no,northeast,9288.0267,Overweight
+47,male,3,yes,southwest,25309.489,Overweight
+27,female,0,no,northwest,3353.4703,Normal Weight
+55,male,0,no,northwest,10594.50155,Overweight
+48,female,0,no,southwest,8277.523,Overweight
+45,female,0,no,southeast,17929.30337,Obesity Class I
+24,female,0,no,southeast,2480.9791,Obesity Class II
+32,male,1,no,northwest,4462.7218,Obesity Class I
+24,male,0,no,southeast,1981.5819,Obesity Class I
+57,male,1,no,southeast,11554.2236,Overweight
+59,male,1,yes,southeast,48970.2476,Obesity Class III
+36,male,3,no,northwest,6548.19505,Overweight
+29,female,4,no,southwest,5708.867,Overweight
+42,female,1,no,southwest,7045.499,Overweight
+48,male,2,no,southeast,8978.1851,Obesity Class II
+39,male,0,no,northeast,5757.41345,Obesity Class III
+63,male,1,no,northwest,14349.8544,Normal Weight
+54,female,1,no,southeast,10928.849,Obesity Class I
+37,male,1,yes,southeast,39871.7043,Obesity Class II
+63,male,0,no,northeast,13974.45555,Obesity Class I
+21,male,0,no,northwest,1909.52745,Obesity Class I
+54,female,2,no,northeast,12096.6512,Overweight
+60,female,0,no,northeast,13204.28565,Underweight
+32,female,1,no,southeast,4562.8421,Overweight
+47,female,1,no,southwest,8551.347,Obesity Class I
+21,male,0,no,northeast,2102.2647,Overweight
+28,male,0,yes,southeast,34672.1472,Obesity Class I
+63,male,3,no,southeast,15161.5344,Obesity Class I
+18,male,2,no,southeast,11884.04858,Normal Weight
+32,male,1,no,northwest,4454.40265,Overweight
+38,male,1,no,northwest,5855.9025,Normal Weight
+32,male,1,no,southwest,4076.497,Obesity Class I
+62,female,2,no,northwest,15019.76005,Obesity Class I
+39,female,5,yes,southwest,19023.26,Underweight
+55,male,0,no,northeast,10796.35025,Overweight
+57,male,0,no,northwest,11353.2276,Obesity Class I
+52,male,1,no,southeast,9748.9106,Obesity Class III
+56,male,0,no,southwest,10577.087,Normal Weight
+47,male,0,yes,southeast,41676.0811,Obesity Class II
+55,female,0,no,northeast,11286.5387,Overweight
+23,male,3,no,southwest,3591.48,Obesity Class I
+22,female,0,yes,northwest,33907.548,Obesity Class I
+50,female,4,no,southwest,11299.343,Obesity Class I
+18,female,4,no,northeast,4561.1885,Obesity Class I
+51,female,2,yes,northeast,44641.1974,
+22,male,0,no,southeast,1674.6323,Obesity Class I
+52,female,0,no,northeast,23045.56616,Obesity Class I
+25,female,1,no,southeast,3227.1211,Obesity Class I
+33,female,2,yes,northeast,16776.30405,Normal Weight
+53,male,3,no,southwest,11253.421,Overweight
+29,male,1,no,southeast,3471.4096,Obesity Class II
+58,male,0,no,southeast,11363.2832,Obesity Class II
+37,male,0,no,southwest,20420.60465,Overweight
+54,female,0,no,southeast,10338.9316,Obesity Class I
+49,female,0,no,northwest,8988.15875,
+50,female,2,no,northwest,10493.9458,Overweight
+26,male,1,no,southwest,2904.088,Obesity Class I
+45,male,3,no,southeast,8605.3615,Normal Weight
+54,female,1,no,northeast,11512.405,Obesity Class I
+38,male,3,yes,southeast,41949.2441,Obesity Class II
+48,female,3,yes,southeast,24180.9335,Overweight
+28,female,3,no,northwest,5312.16985,Overweight
+23,male,0,no,northeast,2396.0959,Normal Weight
+55,male,1,no,southeast,10807.4863,Obesity Class I
+41,male,5,no,northeast,9222.4026,Overweight
+25,male,2,yes,southeast,36124.5737,Obesity Class I
+33,male,1,yes,southeast,38282.7495,Obesity Class II
+30,female,3,no,northwest,5693.4305,Normal Weight
+23,female,0,yes,southwest,34166.273,Obesity Class I
+46,male,2,no,southeast,8347.1643,Obesity Class II
+53,female,3,yes,northwest,46661.4424,Obesity Class II
+27,female,1,no,northeast,18903.49141,Obesity Class I
+23,female,1,yes,northeast,40904.1995,Obesity Class III
+63,female,0,no,northwest,14254.6082,Overweight
+55,male,0,no,southwest,10214.636,Overweight
+35,female,2,no,southeast,5836.5204,Obesity Class II
+34,male,1,no,southwest,14358.36437,Obesity Class I
+19,female,0,no,southwest,1728.897,Normal Weight
+39,female,5,no,southeast,8582.3023,Normal Weight
+27,male,2,no,southwest,3693.428,Obesity Class III
+57,male,0,no,northeast,20709.02034,Obesity Class III
+52,female,0,no,northwest,9991.03765,Underweight
+28,male,0,no,northwest,19673.33573,Obesity Class I
+50,female,3,no,northwest,11085.5868,Overweight
+44,female,1,no,southwest,7623.518,Overweight
+26,female,0,no,northwest,3176.2877,Normal Weight
+33,male,0,no,southeast,3704.3545,Obesity Class I
+19,female,0,yes,northwest,36898.73308,Obesity Class I
+50,male,1,no,southeast,9048.0273,Obesity Class II
+41,female,3,no,southwest,7954.517,Obesity Class I
+52,female,0,no,southeast,27117.99378,Normal Weight
+39,male,2,no,southeast,6338.0756,Obesity Class I
+50,male,2,no,southwest,9630.397,Obesity Class I
+52,male,3,no,northwest,11289.10925,Obesity Class I
+60,male,0,yes,southwest,52590.82939,Obesity Class I
+20,female,0,no,northwest,2261.5688,Obesity Class I
+55,male,1,no,southwest,10791.96,Normal Weight
+42,male,0,no,southwest,5979.731,Obesity Class I
+18,female,0,no,northeast,2203.73595,Obesity Class I
+58,female,0,no,northwest,12235.8392,Obesity Class II
+43,female,3,yes,southeast,40941.2854,Obesity Class I
+35,female,1,no,northwest,5630.45785,Obesity Class II
+48,female,4,no,northwest,11015.1747,Overweight
+36,female,3,no,northeast,7228.21565,Normal Weight
+19,male,0,yes,southeast,39722.7462,Obesity Class III
+23,female,2,no,northwest,14426.07385,Normal Weight
+20,female,0,no,northeast,2459.7201,Obesity Class I
+32,female,0,no,southwest,3989.841,Obesity Class III
+43,female,1,no,northwest,7727.2532,Obesity Class I
+34,male,2,no,southeast,5124.1887,Obesity Class III
+30,male,1,no,southeast,18963.17192,Obesity Class II
+18,female,0,no,northeast,2200.83085,Overweight
+41,female,1,no,northwest,7153.5539,Overweight
+35,female,0,no,northeast,5227.98875,Overweight
+57,male,0,no,southeast,10982.5013,Obesity Class III
+29,female,2,no,southwest,4529.477,Normal Weight
+32,male,2,no,southwest,4670.64,Obesity Class II
+37,female,1,no,northwest,6112.35295,Obesity Class I
+18,male,1,yes,northeast,17178.6824,Overweight
+43,female,2,yes,southwest,22478.6,Overweight
+56,female,0,no,southeast,11093.6229,Obesity Class III
+38,male,2,no,northwest,6457.8434,Overweight
+29,male,2,no,northwest,4433.9159,Obesity Class I
+22,female,0,no,southwest,2154.361,Overweight
+52,female,1,yes,northwest,23887.6627,Normal Weight
+40,female,1,no,southwest,6496.886,Overweight
+23,female,0,no,northeast,2899.48935,Obesity Class I
+31,male,0,yes,southeast,19350.3689,Overweight
+42,female,1,no,northeast,7650.77375,Obesity Class III
+24,female,0,no,northwest,2850.68375,
+25,female,0,no,southwest,2632.992,Obesity Class I
+48,female,1,no,northeast,9447.3824,Overweight
+23,female,1,yes,southeast,18328.2381,Overweight
+45,male,2,no,northeast,8603.8234,Normal Weight
+20,male,3,yes,northwest,37465.34375,Obesity Class II
+62,female,0,no,northwest,13844.7972,Obesity Class I
+43,female,1,yes,northeast,21771.3423,Overweight
+23,female,0,no,southwest,13126.67745,Overweight
+31,female,2,no,northwest,5327.40025,Obesity Class I
+41,female,1,no,northeast,13725.47184,Normal Weight
+58,female,1,no,northeast,13019.16105,Obesity Class I
+48,female,0,no,northwest,8671.19125,Obesity Class II
+31,female,0,no,northwest,4134.08245,Normal Weight
+19,female,3,no,northwest,18838.70366,Overweight
+19,female,0,yes,northwest,33307.5508,Obesity Class I
+41,male,0,no,southeast,5699.8375,Obesity Class I
+40,male,1,no,northwest,6393.60345,Overweight
+31,female,2,no,southwest,4934.705,Overweight
+37,male,2,no,northwest,6198.7518,Normal Weight
+46,male,2,no,northwest,8733.22925,Obesity Class III
+22,male,0,no,northwest,2055.3249,Obesity Class I
+51,male,1,no,northeast,9964.06,Obesity Class I
+18,female,3,yes,southeast,18223.4512,Overweight
+35,male,1,no,northwest,5116.5004,Underweight
+59,female,2,no,southwest,36910.60803,Obesity Class I
+36,male,2,yes,southwest,38415.474,Obesity Class I
+37,female,1,yes,northeast,20296.86345,Overweight
+59,male,1,no,southwest,12347.172,Obesity Class II
+36,male,1,no,northwest,5373.36425,Obesity Class I
+39,male,2,no,southeast,23563.01618,Obesity Class I
+18,male,0,no,northeast,1702.4553,Normal Weight
+52,female,2,no,southwest,10806.839,Obesity Class I
+27,female,1,no,northwest,3956.07145,Obesity Class I
+18,male,0,no,northeast,12890.05765,Obesity Class II
+40,male,0,no,southeast,5415.6612,Overweight
+29,male,2,no,southeast,4058.1161,Obesity Class II
+46,female,1,yes,southwest,41661.602,Obesity Class I
+38,female,3,no,northwest,7537.1639,Obesity Class I
+30,female,1,no,northeast,4718.20355,Normal Weight
+40,male,2,no,southeast,6593.5083,
+50,male,0,no,southeast,8442.667,Overweight
+20,female,0,yes,southeast,26125.67477,Normal Weight
+41,male,1,no,northeast,6858.4796,Normal Weight
+33,female,1,no,southeast,4795.6568,Obesity Class II
+38,male,2,no,northeast,6640.54485,Underweight
+42,male,2,no,southeast,7162.0122,Obesity Class II
+56,male,0,no,southeast,10594.2257,Obesity Class I
+58,male,0,no,northeast,11938.25595,Obesity Class I
+52,male,3,yes,northwest,60021.39897,Obesity Class I
+20,female,0,yes,southwest,20167.33603,Normal Weight
+54,female,3,no,northwest,12479.70895,Normal Weight
+58,male,0,no,southwest,11345.519,Normal Weight
+45,female,2,no,southeast,8515.7587,Overweight
+26,male,0,no,northwest,2699.56835,Obesity Class I
+63,female,0,no,northeast,14449.8544,Normal Weight
+58,female,0,no,northwest,12224.35085,Overweight
+37,male,3,no,northeast,6985.50695,Normal Weight
+25,female,1,no,southeast,3238.4357,Obesity Class III
+52,male,2,yes,southeast,47269.854,Obesity Class III
+64,male,2,yes,southeast,49577.6624,Obesity Class II
+22,female,3,no,northwest,4296.2712,Normal Weight
+28,female,0,no,southeast,3171.6149,Obesity Class I
+18,male,0,no,southeast,1135.9407,Obesity Class I
+28,male,5,no,southwest,5615.369,Normal Weight
+45,female,3,no,southwest,9101.798,Overweight
+33,male,4,no,southwest,6059.173,Overweight
+18,female,0,no,southeast,1633.9618,Obesity Class II
+32,male,1,yes,northeast,37607.5277,Obesity Class I
+24,male,0,yes,northeast,18648.4217,Overweight
+19,male,0,no,southwest,1241.565,Normal Weight
+20,male,0,yes,southwest,16232.847,Overweight
+40,female,4,no,southwest,15828.82173,Overweight
+34,female,0,no,southeast,4415.1588,Overweight
+42,female,0,no,southwest,6474.013,Obesity Class II
+51,female,3,no,northwest,11436.73815,Obesity Class II
+54,female,1,no,northwest,11305.93455,Overweight
+55,male,3,no,northwest,30063.58055,Obesity Class II
+52,female,0,no,northeast,10197.7722,Normal Weight
+32,female,0,no,northeast,4544.2348,Normal Weight
+28,male,1,no,southwest,3277.161,Obesity Class II
+41,female,1,no,southeast,6770.1925,Overweight
+43,female,1,no,southwest,7337.748,Overweight
+49,female,2,no,northeast,10370.91255,Obesity Class I
+64,male,0,yes,southeast,26926.5144,Normal Weight
+55,female,0,no,southwest,10704.47,Obesity Class I
+24,male,0,yes,northeast,34254.05335,Obesity Class I
+20,female,0,no,southwest,1880.487,Obesity Class I
+45,male,3,no,southwest,8615.3,Overweight
+26,male,1,no,northwest,3292.52985,Obesity Class I
+25,female,0,no,northwest,3021.80915,Obesity Class I
+43,male,5,no,southeast,14478.33015,Overweight
+35,male,1,no,southeast,4747.0529,Overweight
+26,male,0,yes,southeast,17043.3414,Overweight
+57,male,0,no,southwest,10959.33,Normal Weight
+22,female,0,no,northeast,2741.948,Obesity Class I
+32,female,0,no,northwest,4357.04365,Overweight
+39,male,1,yes,northeast,22462.04375,
+25,female,2,no,northwest,4189.1131,Overweight
+48,female,0,no,southeast,8283.6807,Obesity Class I
+47,female,2,yes,northwest,24535.69855,Overweight
+18,female,0,yes,northeast,14283.4594,Normal Weight
+18,male,1,no,southeast,1720.3537,Obesity Class I
+61,male,1,yes,southwest,47403.88,Obesity Class II
+47,female,0,no,northeast,8534.6718,Normal Weight
+28,female,0,no,northeast,3732.6251,Underweight
+36,female,1,no,southwest,5472.449,Overweight
+20,male,2,yes,southwest,38344.566,Obesity Class II
+44,male,1,no,southeast,7147.4728,Obesity Class I
+38,female,2,no,northeast,7133.9025,Normal Weight
+19,male,0,yes,southwest,34828.654,Obesity Class I
+21,male,0,no,southeast,1515.3449,Normal Weight
+46,male,3,no,northwest,9301.89355,Overweight
+58,male,0,no,northeast,11931.12525,Overweight
+20,male,1,no,southwest,1964.78,Normal Weight
+18,male,0,no,northeast,1708.92575,Overweight
+28,female,2,no,southeast,4340.4409,Overweight
+33,male,2,no,northwest,5261.46945,Overweight
+19,female,1,no,northwest,2710.82855,Overweight
+45,male,0,yes,southeast,62592.87309,Obesity Class I
+62,male,3,yes,northwest,46718.16325,Obesity Class I
+25,female,1,no,southwest,3208.787,Normal Weight
+43,male,0,yes,southwest,37829.7242,Overweight
+42,male,2,yes,northeast,21259.37795,Normal Weight
+24,female,0,no,southeast,2464.6188,Overweight
+29,female,0,yes,northeast,16115.3045,Normal Weight
+32,male,4,yes,northwest,21472.4788,Overweight
+25,female,0,yes,southwest,33900.653,Obesity Class I
+41,male,2,no,southwest,6875.961,Obesity Class I
+42,male,1,no,northwest,6940.90985,Overweight
+33,female,0,no,northwest,4571.41305,Overweight
+34,male,1,no,southwest,4536.259,Obesity Class III
+19,female,2,yes,southwest,36397.576,Obesity Class I
+30,female,3,yes,northwest,18765.87545,Normal Weight
+18,male,1,no,northeast,11272.33139,Overweight
+19,female,0,no,southwest,1731.677,Normal Weight
+18,male,0,no,southeast,1163.4627,Obesity Class III
+35,male,4,no,northeast,19496.71917,Obesity Class II
+39,female,2,no,northwest,7201.70085,Overweight
+31,male,3,no,northwest,5425.02335,Obesity Class I
+62,male,0,yes,northeast,28101.33305,Overweight
+62,male,0,no,southeast,12981.3457,Obesity Class II
+42,female,2,yes,southeast,43896.3763,Obesity Class III
+31,male,1,no,northwest,4239.89265,Overweight
+61,male,0,no,northeast,13143.33665,Obesity Class I
+42,female,0,no,northeast,7050.0213,Obesity Class I
+51,male,1,no,southeast,9377.9047,Obesity Class I
+23,female,2,no,northeast,22395.74424,Normal Weight
+52,male,2,no,southwest,10325.206,Obesity Class II
+57,female,2,no,southeast,12629.1656,Overweight
+23,female,0,no,southwest,10795.93733,Obesity Class I
+52,female,3,no,southwest,11411.685,Obesity Class III
+50,male,3,no,northwest,10600.5483,Obesity Class I
+18,female,0,no,northeast,2205.9808,Obesity Class I
+18,female,0,no,southeast,1629.8335,Obesity Class II
+21,female,0,no,southwest,2007.945,Overweight
+61,female,0,yes,northwest,29141.3603,Overweight
