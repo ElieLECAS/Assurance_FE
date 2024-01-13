@@ -8,7 +8,7 @@ from sklearn.preprocessing import RobustScaler, OneHotEncoder, PolynomialFeature
 from datetime import datetime, timedelta
 from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import Lasso
-from helpers import select_bmi_column, select_age_column, transform_bmi_features, transform_age_features
+from helpers import categorize_imc
 
 
 def calculate_age(birthdate):
@@ -55,12 +55,12 @@ def page_prediction():
     sex = st.radio("Sexe", ["Homme", "Femme"])
 
     smoker = st.checkbox("Êtes-vous Fumeur", False)
-    st.write(f"Vous êtes {'fumeur' if smoker else 'non_fumeur'}")
+    st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}")
 
-    poids = st.number_input("Entrez votre Poids (kg)", min_value=0.00, max_value=150.00, value=70.00)
+    poids = st.number_input("Entrez votre Poids (kg)", min_value=0, max_value=150, value=70)
     st.write(f"Votre poids est {poids} kg")
 
-    taille = st.number_input("Entrez votre Taille (cm)", min_value=0.00, max_value=220.00, value=170.00)
+    taille = st.number_input("Entrez votre Taille (cm)", min_value=0, max_value=220, value=170)
     st.write(f"Votre taille est {taille/100} m")
 
     bmi = round(poids / (taille / 100)**2, 2)
