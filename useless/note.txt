@@ -1,0 +1,117 @@
+# Convertir une colonne en type datetime
+df['date_col'] = pd.to_datetime(df['date_col'])
+
+# Convertir une colonne en type catégorie
+df['cat_col'] = df['cat_col'].astype('category')
+
+8. Enregistrement des données nettoyées :
+
+Enregistrez les données nettoyées dans un nouveau fichier si nécessaire.
+
+python
+
+df.to_csv('donnees_nettoyees.csv', index=False)
+
+
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=True, train_size=0.85, random_state=42, stratify=X['smoker'])
+
+import pandas as pd
+
+dataset_path = "Dataset_Brief.csv"
+df = pd.read_csv(dataset_path)
+
+# Informations générales sur les données
+print(df.info())
+
+print("Avant nettoyage:")
+print(df.head())
+
+# Vérifier les valeurs manquantes
+print(df.isnull().sum())
+
+# Supprimer les lignes avec des valeurs manquantes
+# df = df.dropna()
+
+# Remplacer les valeurs manquantes par la moyenne
+# df['colonne'] = df['colonne'].fillna(df['colonne'].mean())
+
+#duplicates
+duplicates = df.duplicated(subset=["age", "sex", "bmi", "children", "smoker", "region"])
+duplicates_data = df[duplicates]
+#
+print("\nLignes avec des duplicatas:")
+print(duplicates_data)
+#
+df = df.drop_duplicates(subset=["age", "sex", "bmi", "children", "smoker", "region"], keep='first')
+#
+print("\nAprès vérification de duplicatas:")
+print(df.head())
+#
+
+df['age'] = df['age'].astype(int)
+
+
+
+
+ 
+
+ 
+
+# # Diviser le DataFrame en features (X) et la target variable (y)
+
+# X = df.drop('charges', axis=1)
+
+# y = df['charges']
+
+# X_train, X_test, y_train, y_test = train_test_split(X, y, shuffle=True, train_size=0.85, random_state=42, stratify=X['smoker'])
+
+# # Créer un modèle Lasso
+# lasso_model = Lasso(alpha=1.0)  # Vous pouvez ajuster le paramètre alpha pour la force de régularisation
+
+# lasso_model.fit(X_train, y_train)
+
+# # Faire des prédictions sur l'ensemble de test
+# y_pred_lasso = lasso_model.predict(X_test)
+
+# # Évaluer la performance du modèle Lasso
+# mse_lasso = mean_squared_error(y_test, y_pred_lasso)
+# r2_lasso = r2_score(y_test, y_pred_lasso)
+
+# print(f'Mean Squared Error (Lasso): {mse_lasso:.2f}')
+# print(f'R-squared (Lasso): {r2_lasso:.2f}')
+
+ 
+
+# # Diviser les données en ensembles d'entraînement et de test (80% entraînement, 20% test)
+
+
+
+ 
+
+# # Créer un modèle Ridge
+
+# ridge_model = Ridge(alpha=1.0)  # Vous pouvez ajuster le paramètre alpha pour la force de régularisation
+
+# ridge_model.fit(X_train, y_train)
+
+ 
+
+# # Faire des prédictions sur l'ensemble de test
+
+# y_pred = ridge_model.predict(X_test)
+
+ 
+
+# # Évaluer la performance du modèle
+
+# mse = mean_squared_error(y_test, y_pred)
+
+# r2 = r2_score(y_test, y_pred)
+
+ 
+
+# print(f'Mean Squared Error: {mse:.2f}')
+
+# print(f'R-squared: {r2:.2f}')
