@@ -10,6 +10,11 @@ from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import Lasso
 from helpers import categorize_imc
 
+st.set_page_config(
+    page_title="Mon Application",
+    page_icon="🧊",
+    layout="wide",
+)
 
 def calculate_age(birthdate):
     today = datetime.now()
@@ -77,6 +82,15 @@ def page_prediction():
     region = st.selectbox("Sélectionnez une région", ["northwest", "northeast", "southwest", "southeast"])
     st.write(f"Vous habitez au {region}")
 
+    categories = {
+    'Underweight': (0, 18.5),
+    'Normal Weight': (18.5, 24.9),
+    'Overweight': (25, 29.9),
+    'Obesity Class I': (30, 34.9),
+    'Obesity Class II': (35, 39.9),
+    'Obesity Class III': (40, float('inf'))
+}
+
     if st.button("Prédire le Prix de l'Assurance"):
         try:
             with open('modele.pkl', 'rb') as file:
@@ -91,12 +105,13 @@ def page_prediction():
                 sex = sex_mapping.get(sex, sex)
 
                 input_data = pd.DataFrame({
-                    'age': [age],
-                    'sex': [sex],
-                    'bmi': [bmi],
-                    'smoker': [smoker],
-                    'children': [children],
-                    'region': [region]
+                'age': [age],
+                'sex': [sex],
+                'bmi': [bmi],
+                'smoker': [smoker],
+                'children': [children],
+                'region': [region],
+                'imc_category': [categorize_imc(bmi, categories)]  # Assurez-vous que 'categories' est défini
                 })
 
                 input_data = input_data.fillna(0)
