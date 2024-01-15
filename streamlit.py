@@ -120,7 +120,7 @@ def page_prediction():
                 print(input_data)
 
                 prediction = grid_search.predict(input_data)
-                st.write(f"Prédiction des Charges Médicales : {prediction}")
+                st.write(f"Prédiction des Charges Médicales : ${round(float(prediction),2)}")
 
         except Exception as e:
             st.error(f"Erreur lors du chargement du modèle : {e}")
