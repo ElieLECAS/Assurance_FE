@@ -6,7 +6,7 @@ import pandas as pd
 
 
 col1, col2 = st.columns([0.5, 3])
-icon_url = "assets\logo_image.png"
+icon_url = "assets/logo_image.png"
 col1.image(icon_url, width=100)
 col2.title("Projet Assur'émant")
 
