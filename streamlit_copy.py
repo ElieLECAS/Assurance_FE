@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-
+from datetime import datetime, timedelta
 
 
 col1, col2 = st.columns([0.5, 3])
@@ -12,9 +12,26 @@ col2.title("Projet Assur'émant")
 
 st.sidebar.header("Paramètres")
 sex = st.sidebar.radio("Sexe", ["Homme", "Femme"])
+
+birthdate = st.sidebar.date_input("Veuillez sélectionner votre date de naissance.", format="DD/MM/YYYY")
+min_age_required = 18
+
+def calculate_age(birthdate):
+    today = datetime.now()
+    age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
+    return age
+
+if birthdate:
+    age = calculate_age(birthdate)
+    if age < min_age_required:
+        st.sidebar.error(f"Vous devez avoir au moins {min_age_required} ans pour utiliser cette application.")
+    else:
+        st.write(f"Âge actuel : {age} ans")
+age = calculate_age(birthdate)
+
+
 parametre_taille = st.sidebar.slider("Votre taille", 0, 250, 165)
 parametre_poids = st.sidebar.slider("Votre Poids", 0, 150, 70)
-age = st.sidebar.slider("Votre age", 18, 99, 45)
 children = st.sidebar.slider("Nombre d'enfants", 0, 5, 0)
 region = st.sidebar.selectbox("Région", ['northwest', 'northeast', 'southwest', 'southeast'])
 smoker = st.sidebar.checkbox("Fumeur", False)
@@ -26,7 +43,8 @@ sex = sex_mapping.get(sex, sex)
 
 smoker_mapping = {True: 'yes', False: 'no'}
 smoker = smoker_mapping.get(smoker, smoker)
-    
+
+
 
 if bmi <= 18.5:
     imc_category = 'Underweight'
@@ -42,10 +60,11 @@ elif bmi >= 40:
     imc_category = 'Obesity Class III'
 
 
-st.write(f"Votre taille est {parametre_taille}")
-st.write(f"Votre poids est {parametre_poids}")
-st.write(f"Votre catégorie d'imc est {bmi}")
-st.write(f"Votre imc est {imc_category}")
+st.write(f"Votre taille est {parametre_taille} cm")
+st.write(f"Votre poids est {parametre_poids} Kg")
+st.write(f"Votre imc est {bmi}")
+st.write(f"Votre catégorie d'imc est {imc_category}")
+
 
 if children == 1:
     st.write(f"Vous avez {children} enfant")
@@ -56,9 +75,8 @@ else:
 
 
 st.write(f"Vous habitez au {region}")
-st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}")
 
-
+# st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}")
 
 
 if st.sidebar.button("Prédire les Charges Médicales"):
