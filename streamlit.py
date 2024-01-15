@@ -59,8 +59,11 @@ def page_prediction():
 
     sex = st.radio("Sexe", ["Homme", "Femme"])
 
-    smoker = st.checkbox("Êtes-vous Fumeur", False)
-    st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}")
+    smoker = st.checkbox("Êtes-vous fumeur(se) ?", False)
+    if sex == "Homme":  
+        st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}.")
+    else:
+        st.write(f"Vous êtes {'fumeuse' if smoker else 'non fumeuse'}.")
 
     poids = st.number_input("Entrez votre Poids (kg)", min_value=0, max_value=150, value=70)
     st.write(f"Votre poids est {poids} kg")
