@@ -10,11 +10,11 @@ from sklearn.compose import ColumnTransformer
 from sklearn.linear_model import Lasso
 from helpers import categorize_imc
 
-st.set_page_config(
-    page_title="Mon Application",
-    page_icon="🧊",
-    layout="wide",
-)
+# st.set_page_config(
+#     page_title="Mon Application",
+#     page_icon="🧊",
+#     layout="wide",
+# )
 
 def calculate_age(birthdate):
     today = datetime.now()
