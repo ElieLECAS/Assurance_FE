@@ -28,13 +28,18 @@ if birthdate:
     else:
         st.write(f"Âge actuel : {age} ans")
 age = calculate_age(birthdate)
+smoker = st.sidebar.checkbox("Êtes-vous fumeur(se) ?", False)
+if sex == "Homme":
+    st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}.")
+else:
+    st.write(f"Vous êtes {'fumeuse' if smoker else 'non fumeuse'}.")
 
 
 parametre_taille = st.sidebar.slider("Votre taille", 0, 250, 165)
 parametre_poids = st.sidebar.slider("Votre Poids", 0, 150, 70)
 children = st.sidebar.slider("Nombre d'enfants", 0, 5, 0)
 region = st.sidebar.selectbox("Région", ['northwest', 'northeast', 'southwest', 'southeast'])
-smoker = st.sidebar.checkbox("Fumeur", False)
+
 bmi = round(parametre_poids / (parametre_taille /100)**2,2)
 imc_category = None
 
@@ -77,6 +82,8 @@ else:
 st.write(f"Vous habitez au {region}")
 
 # st.write(f"Vous êtes {'fumeur' if smoker else 'non fumeur'}")
+
+
 
 
 if st.sidebar.button("Prédire les Charges Médicales"):
