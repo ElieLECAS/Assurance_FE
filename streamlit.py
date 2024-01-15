@@ -5,8 +5,11 @@ import pandas as pd
 
 
 
+col1, col2 = st.columns([0.5, 3])
+icon_url = "assets\logo_image.png"
+col1.image(icon_url, width=100)
+col2.title("Projet Assur'émant")
 
-st.title("Projet Assur'Aimant")
 st.sidebar.header("Paramètres")
 sex = st.sidebar.radio("Sexe", ["Homme", "Femme"])
 parametre_taille = st.sidebar.slider("Votre taille", 0, 250, 165)
