@@ -111,7 +111,7 @@ def page_prediction():
                 'smoker': [smoker],
                 'children': [children],
                 'region': [region],
-                'imc_category': [categorize_imc(bmi, categories)]  # Assurez-vous que 'categories' est défini
+                'imc_category': [categorize_imc(bmi, categories)]  
                 })
 
                 input_data = input_data.fillna(0)
